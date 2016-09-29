@@ -1,0 +1,179 @@
+// menu component
+
+.menu
+	position relative
+	float left
+	margin-right 0 
+	+below(12)
+		display block
+		static 0
+		background none
+		position relative
+	+below(10)
+		margin-right 0
+	+below(1024px)
+		display none
+		fixed 52px false false 0
+		background: colors.menu-mobile
+		size 100%
+		z-index 9999
+.menu__nav
+	margin 28px 0 0 0
+	+below(9)
+		margin 31px 0 0 0
+
+.menu__list
+	cf()
+	padding 0
+.menu__list--mobile
+	display none
+	+below(9)
+		display block
+.menu__item
+	text-align center
+	float left
+	padding 0
+	margin 0 5px
+	+below(11)
+		margin 0
+	+below(1024px)
+		display block
+		float none
+		size 100% auto
+		&:nth-last-child(2),&:nth-child(2),&:first-child,&:nth-child(3),&:last-child
+			size 100% auto
+.menu__item.mobile--only
+	display none
+	+below(1024px)
+		display block
+.menu__item--active
+	.menu__caret
+		&:after
+			absolute 45% false false 100%
+			border-width 4px 4px 0 4px;
+			border-color white transparent transparent transparent
+.menu__item.current_page
+	.menu__anchor
+		padding 0 10px 8px
+		border-bottom 3px solid #fbb116
+		color white
+		font-weight bold
+		svg
+			fill white
+		+below(1024px)
+			border-bottom none !important
+			margin-bottom 0
+.menu__anchor
+	position relative
+	size 100% auto
+	color: colors.menu-anchor
+	font-size: fontSizes.menu-anchor
+	line-height 11px
+	font-weight 400
+	text-transform uppercase
+	text-align center
+	display inline-block
+	padding 0 7px
+	svg
+		//fill #c7c7c7
+		position relative
+		top -2px
+		left 2px
+		+below(1024px)
+			display: none
+	&:hover
+		color: colors.menu-anchor-hover
+		.menu__caret:after
+			border-top-color: colors.menu-caret-hover
+
+	+below(1024px)
+		color: colors.menu-sm-anchor
+		font-size: fontSizes.menu-sm-anchor
+		line-height 16px
+		margin-bottom:24px
+
+		&:hover
+			color: colors.menu-anchor-hover
+
+			.menu__caret:after
+				border-top-color: colors.menu-caret-hover
+
+.menu__caret
+	position relative
+	&:after
+		content ' '
+		size 0
+		border-style solid
+		margin 0 6px
+		absolute 45% false false 100%
+		border-width 4px 4px 0 4px;
+		border-color: colors.menu-caret transparent transparent transparent
+	+below(1024px)
+		display none
+
+.extra
+	cf()
+	//float right !important
+	width 250px
+	//margin-top 18px !important
+	
+	+above(13)
+		/*col(1.5/bp-max-columns)
+		text-align right
+		float right
+		margin-right 22px
+		margin-top 2px*/
+		clear none
+		float right
+		margin-left 0
+		margin-right 22px
+		//margin-top 2px
+		text-align right
+	+below(12)
+		width 220px
+	+below(8)
+		width: 90px
+
+.header--fixed
+	.extra
+		//margin-top 2px !important
+.extra__nav
+	display inline-block
+	margin 10px 15px 10px 0
+	padding 6px 0
+	text-align right
+	+below(12)
+		margin-right 8px
+	+below(1024px)
+		display none
+	.extra_anchor__right
+		margin-right 1px
+	span
+		font-size  9px
+		position relative
+		top -1px
+		left -1px
+
+.extra__anchor
+	position relative
+	margin 0 1px
+	color: colors.extra-anchor-color
+	font-size: fontSizes.extra-anchor
+	
+	&.contacts
+		margin-right 5px
+	
+	span
+		font-size 8px
+		position relative
+		top -3px
+
+	&:hover
+		color: colors.extra-anchor-hover
+		border-bottom: 1px solid colors.extra-anchor-border
+
+.extra__trial
+	display inline-block
+	padding 10px 0
+	text-align right
+	float right

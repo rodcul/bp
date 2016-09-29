@@ -1,0 +1,461 @@
+// Products Page
+.product__subtitle
+	+below(8)
+		line-height 22px
+.products-product__content section ul li
+	line-height 20px
+
+// walk through  on product pages
+.page--products
+	.walk-through
+		border-top:none
+
+// products product component
+.products-product
+	color bp-l-gray
+	padding 70px 15px 120px 15px
+	border-top 1px solid #c7c7c7
+	background-color white
+	+below(5)
+		padding 70px 5px 120px
+	.products-product__content
+		span(1/2)
+		padding-left 25px
+		+below(11)
+			padding 0 25px
+		+below(8)
+			span(1/1)
+	.products-product__image
+		span(1/2)
+		text-align center
+		padding 0 30px
+		float right
+		+below(11)
+			padding 0 25px
+		+below(8)
+			span(1/1)
+			text-align center
+			margin-bottom 45px
+			margin-top 0
+		img
+			display inline-block
+.products-product:first-child
+	border-top none
+.products-product:nth-child(even)
+	background-color #f9f9f9
+	.products-product__image
+		float left
+
+// Product Header
+.products-product__header
+	margin-bottom 23px
+	margin-top 20px
+	line-height 38px
+	+below(5)
+		line-height 32px
+		margin-bottom 33px
+		margin-top 12px
+.product__title
+	font-size 32px
+	font-weight:600
+	margin 22px 0 3px
+	+below(12)
+		font-size:30px
+	+below(11)
+		font-size:30px
+	+below(8)
+		font-size:24px
+	+below(5)
+		margin-top 0
+		margin-bottom 7px
+.product__subtitle
+	font-size 25px
+	margin 0
+	font-weight 100
+	line-height 38px
+	+below(12)
+		font-size 22px
+		line-height 28px
+	+below(11)
+		font-size 22px
+		line-height 28px
+	+below(8)
+		font-size 16px
+		line-height 24px
+.products-product__strip-line
+	size 49px 9px
+	background-color bp-red
+	+below(5)
+		width 39px
+
+.products-product:nth-child(2n) .products-product__strip-line
+	size 49px 9px
+	background-color bp-xxs-orange
+
+.products-product:nth-child(3n) .products-product__strip-line
+	background-color bp-xs-blue
+
+.products-product:nth-child(2n) .products-product__content ul li:before
+	background-color bp-xxs-orange
+
+.products-product:nth-child(3n) .products-product__content ul li:before
+	background-color bp-xs-blue
+
+//product content
+.products-product__content
+	font-size d-font-size
+	+below(12)
+		font-size 16px
+	+below(11)
+		font-size 14px
+	+below(8)
+		font-size 14px
+	section
+		font-size 16px
+		line-height 25px
+		strong
+			line-height 25px
+			margin-top 26px
+			display block
+		+below(12)
+			font-size 16px
+		+below(11)
+			font-size 14px
+		+below(8)
+			font-size 14px
+		ul
+			position relative
+			top -15px
+			li
+				line-height 27px
+				padding-left 20px
+				padding-left 25px
+				text-indent -20px
+				margin-bottom 10px
+				+below(12)
+					line-height 24px
+				+below(11)
+					line-height 24px
+				+below(8)
+					line-height 22px
+				&:before
+					content ''
+					display inline-block
+					size 10px 10px
+					margin-right 10px
+					position relative
+					left -2px
+					background-color bp-red
+		
+	.solutions-solution__learnmore
+		margin-top 22px
+
+.products-product__learnmore
+	margin 30px 0 0
+	+below(7)
+		text-align center
+	.button
+		display inline-block
+		border 2px solid #c7c7c7
+		text-transform uppercase
+		padding 15px 25px
+		color bp-xxs-blue
+		font-weight bold
+//product Image
+.products-product__image
+	padding 0 30px 50px
+	img
+		position relative
+		opacity 0
+		width 400px
+		margin-top 58px
+		transform translateY(50px)
+//Solution Image Animation
+@keyframes productLeftIMageAnimation {
+  0% {
+  	left: -100px;
+    opacity: 0;
+  }
+  100% {
+  	left: 0;
+    opacity: 1;
+  }
+}
+.productLeftIMageAnimation
+	animation productLeftIMageAnimation 3s ease forwards
+
+@keyframes productRightIMageAnimation {
+  0% {
+  	left: 100px;
+    opacity: 0;
+  }
+  100% {
+  	left: 0;
+    opacity: 1;
+  }
+}
+.productRightIMageAnimation
+	animation productRightIMageAnimation 3s ease forwards
+
+@keyframes productUpIMageAnimation {
+  0% {
+  	transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+  	transform: translateY(0px);
+    opacity: 1;
+  }
+}
+.productUpIMageAnimation
+	animation productUpIMageAnimation 2s ease forwards
+//=======================================
+// Sub Products Section
+//=======================================
+
+.sub-product--introduction
+	.sub-product--introduction__container
+		padding 61px 12px 120px
+		max-width 770px
+		text-align center
+		+below(8)
+			padding 61px 7% 117px
+		+below(5)
+			padding 61px 15px 117px
+		+below(4)
+			padding 35px 30px 63px
+	.sub-product--introduction__title
+		text-align center
+		color #505050
+		font-size 38px
+		font-weight 300
+		line-height 40px
+		margin-bottom 13px
+		+below(11)
+			font-size 32px
+			line-height 36px
+		+below(6)
+			font-size 32px
+			line-height 36px
+		+below(4)
+			font-size 26px
+			line-height 32px
+			display inline-block
+			width 240px
+			br
+				display none
+			
+	.sub-product--introduction__subtitle
+		color #878787
+		font-size 18px
+		font-weight 400
+		line-height 35px
+		text-align center
+		+below(12)
+			font-size 15px
+			line-height 24px
+		+below(11)
+			font-size 15px
+			line-height 24px
+		+below(8)
+			font-size 12px
+			line-height 18px
+		+below(4)
+			font-size 12px
+			line-height 18px
+			display inline-block
+			width 240px
+	.sub-product--introduction__image
+		margin-top 52px
+		padding 0
+		margin-bottom 55px
+	.sub-product--introduction__content
+		color #505050
+		font-size 16px
+		font-weight 400
+		line-height 27px
+		text-align left
+		letter-spacing 0.0010em
+		+below(4)
+			font-size 14px
+			line-height 24px
+		strong
+			font-size 18px
+			font-weight 700
+			line-height 35px
+			margin-bottom 4px
+			display inline-block
+			+below(4)
+				font-size 16px
+.sub--products--sections
+	border-top 1px solid #ddd
+	//padding-top 49px
+	//padding-bottom 120px
+	overflow hidden
+	//background-color #f9f9f9
+	.sub-product--info__container
+		max-width 700px
+		text-align center
+		padding 70px 0 20px
+.sub--products--sections__navigation
+	margin-bottom 40px
+	padding 0 8px
+	+below(8)
+		padding 0 7%
+	+below(5)
+		padding 0 15px
+	.sub--products--sections__tab
+		color #aeaeae
+		font-size 14px
+		font-weight 700
+		line-height 45px
+		text-transform uppercase
+		border-bottom 6px solid #ddd
+		display inline-block
+		padding 0 15px
+		margin-right 5px
+		cursor pointer
+		transition all 0.2s linear 0.0s
+		/*&:hover, &:focus, */&:active
+			color #40a8de
+			border-color #40a8de
+		&:hover
+			color #b8b8b8
+			border-color #c7c7c7
+	.sub--products--sections__tab.active
+		color #40a8de
+		border-color #40a8de
+	.sub--products--sections__navigation--desktop
+		+below(8)
+			display none
+	.sub--products--sections__navigation--mobile-cover
+		display none
+		+below(8)
+			display block
+	.sub--products--sections__navigation--mobile
+		display inline-block
+		height 32px
+		background-image url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCAYAAADgkQYQAAAAT0lEQVQYV2NkIAIwEqGGgTFj/5sEBkaGeJyK/zMsBJuUsf/NAqwK/zMsnOEokgC3DkMhVAHIEBQ3wRUiKcBQBLU6YYajyAJkNxLnO2KCAABUvBp9bbVyiAAAAABJRU5ErkJggg==")
+		background-repeat no-repeat
+		background-color transparent
+		background-position center right 10px
+		-webkit-appearance none
+		-moz-appearance none
+		appearance none
+		cursor pointer
+		width 100%
+		border none
+		padding 0
+		text-align left
+		font-weight 800
+		font-size 14px
+		color #68bfec
+		text-transform uppercase
+		border-radius 0
+		border-bottom 1px solid #3f5468
+.sub--products--sections__section
+	padding 0
+	color #505050
+	display none
+	.container
+		max-width 100%
+		.sub-product-sub-section
+			padding 70px 47px 120px 47px
+			background-color #f9f9f9
+			.center--alignment
+				max-width 1140px
+				margin 0 auto
+			+below(6)
+				padding 80px 15px 25px
+			&:nth-child(2n)
+				background-color #fff
+			&:last-child
+				padding-bottom 120px
+			.sub-product-sub-section__content
+				a
+					color #40a8de
+					text-decoration underline
+					font-weight 700
+					&.button
+						text-decoration none
+						&:hover, &:focus
+							color #68bfec
+		//max-width 1246px
+		//background-color #f9f9f9
+		//padding:0 47px
+	&.sub-inside
+		.sub-product-sub-section
+			background-color #fff
+			&:nth-child(2n)
+				background-color #f9f9f9
+			&:last-child
+				padding-bottom 120px
+	+below(12)
+		padding 0
+	.sub-product-sub-section__image, .sub-product-sub-section__content
+		span(1/2)
+		padding 0 8px
+		+below(12)
+			padding 0 8px
+		+below(8)
+			width 100%
+			padding 0 7%
+			float none
+		+below(5)
+			padding 0 15px
+	.sub-product-sub-section__strip-line
+		width 49px
+		height 11px
+	.sub-product-sub-section__image
+		float right
+		padding-top 40px
+		text-align center
+		overflow hidden
+		img
+			display inline-block
+			position relative
+			opacity 0
+		+below(8)
+			float none
+			margin-bottom 40px
+			padding 0 20%
+		+below(5)
+			padding 0 15px
+	.sub-product-sub-section__title
+		color #505050
+		font-size 32px
+		font-weight 600
+		line-height 38px
+		margin-top 21px
+		+below(4)
+			font-size 24px
+	.sub-product-sub-section__content
+		color #505050
+		font-size 16px
+		font-weight 400
+		line-height 27px
+		+below(4)
+			font-size 14px
+		p
+			margin-bottom 8px
+	.sub-product-sub-section
+		padding-top 70px
+		padding-bottom 55px
+	.sub-product-sub-section__header
+		margin-bottom 25px
+.product-tab-1
+	display block
+.sub-product-sub-section .sub-product-sub-section__strip-line
+	background-color #f0453b
+.sub-product-sub-section:nth-child(even)
+	background-color white
+	//margin 0 -30px
+	//padding-left 30px
+	//padding-right 30px
+.sub-product-sub-section:nth-child(2n) .sub-product-sub-section__strip-line
+	background-color #fbb116
+.sub-product-sub-section:nth-child(3n) .sub-product-sub-section__strip-line
+	background-color #40a8de
+
+.productRightIMageAnimation
+	animation productRightIMageAnimation 3s ease forwards

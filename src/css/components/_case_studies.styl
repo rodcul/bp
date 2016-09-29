@@ -1,0 +1,575 @@
+// case studies component
+
+.case-studies
+	cf()
+
+.case-studies__section
+	cf()
+
+
+
+// Related Case Studies Teaser
+.case-studies__box
+	span(1/2)
+	position relative
+	size false 447px
+	max-height 447px
+	background-position top right
+	background-repeat no-repeat
+	background-size cover
+	overflow hidden
+	+below(1030px)
+		max-height 370px
+	+below(10)
+		span(1/1)
+		max-height 330px
+	+below(5)
+		max-height 240px
+	/*
+	.button--case-studies
+		display inline-block
+		font-size 16px
+		height 53px
+		line-height 50px
+		padding 0 47px
+		+below(8)
+			display inline-block
+			font-size 14px
+			height 42px
+			line-height 41px
+			padding 0 19px */
+	.case-studies__content
+		padidng 0
+		max-height 415px
+		text-align center
+		size 100%
+		position relative
+		z-index 10
+		+below(8)
+			padding 36px 0 40px
+			//max-height 300px
+		.case-studies__head
+			text-align center
+			margin 90px auto 0
+			height 90px
+			width 400px
+			img
+				display inline-block
+				opacity 1
+				max-width 100%
+				height auto
+			+below(10)
+				margin-top 40px
+			+below(480px)
+				margin-top 0
+				width 320px
+				height 72px
+				margin-bottom 15px
+			+below(320px)
+				width 100%
+			/*
+			+below(1030px)
+				margin-top 88px
+			+below(8)
+				margin-top 20px
+				height 65px
+				background-position 50% 61% 
+			+below(5)
+				margin-top 3px
+				background-image none !important
+				height auto
+				margin-bottom 5px
+			img
+				display inline-block
+				opacity 1
+				max-width 100%
+				height auto
+				+below(5)
+					opacity 1
+					max-width 170px*/
+		.case-studies__excerpt
+			color #fff
+			font-size 20px
+			line-height 32px
+			padding 0 15%
+			margin-bottom 32px
+			+below(1030px)
+				max-height 60px
+				overflow hidden
+				line-height 27px
+				margin-bottom 26px
+			+below(8)
+				margin-bottom 22px
+				padding 0 23%
+				font-size 16px
+			+below(5)
+				font-size 12px
+				line-height 19px
+				margin-bottom 10px
+				padding 0 10%
+				max-height 20px
+		.case-studies__call-for-action
+			.button--case-studies
+				line-height 52px
+				+below(8)
+					font-size 14px
+					line-height 37px
+				+below(5)
+					padding 0 19px
+					border 1px solid #fff
+					border-radius 2px
+					font-size 12px
+					line-height 40px
+//Case Study
+.solutions-case-studies .case-studies__box
+	height 370px
+	.case-studies__excerpt
+		font-size 20px
+		font-weight 400
+		line-height 31px
+	.button--case-studies
+		font-size 16px
+		font-weight 700
+		line-height 55px
+		text-transform uppercase
+/*
+	size auto 75px
+	margin 88px 0 5px
+	background-position 50% 50%
+	background-repeat no-repeat
+	hide-text()
+	+below(1030px)
+		background-position 50% 70%
+		height 75px
+		margin 75px 0 5px
+	+below(8)
+		background-size auto 25px
+		height 25px
+		margin 45px 0 0
+		width auto
+	+below(5)
+		background-size: auto 24px;
+		height: 24px;
+.case-studies__excerpt
+	
+	size 70% auto
+	font-size 20px
+	padding 0 15px
+	overflow hidden
+	color white
+	margin 0 auto 38px
+	+below(1030px)
+		color #fff
+		font-size 18px
+		height auto
+		max-height 60px
+		max-width 600px
+		overflow hidden
+		padding-bottom 0
+		padding-left 15px
+		padding-right 15px
+		position relative
+		top 9px
+		width 92%
+		margin 0 auto 41px
+		line-height 27px
+	+below(8)
+		font-size 16px
+		max-width 500px
+		margin 7px auto 27px auto
+		line-height 28px
+	+below(5)
+		max-height 25px
+		max-width 100%
+		margin 7px auto 12px
+.case-studies__call-for-action
+	margin 0 auto
+	text-align center*/
+
+
+
+// Case Studies Pages Content
+.page--case--study
+	.case-study--at_a_glance
+		+below(8)
+			padding-bottom: 5px
+		background #f5f5f5
+		.section-title
+			text-align: center
+			padding-top: 35px
+			padding-bottom: 40px
+			h2
+				display: inline-block
+				font-size: 38px
+				font-weight: 100
+				color: #505050
+				+below(6)
+					font-size: 32px
+					line-height: 50px
+		.info-blocks
+			+below(11)
+				max-width: 890px
+				margin: 0 auto
+				padding-bottom: 15px
+			+below(8)
+				max-width: 500px
+			padding-bottom: 60px
+			.box-item
+				display: inline-block
+				float: left
+				width: 380px
+				padding-left: 16px
+				+below(11)
+					width: 270px
+					padding-left: 40px !important
+					&:first-child
+						padding-left 0 !important
+						.box-item-title
+							width: 100%
+							margin-top: 10px
+							margin-left: -2px
+							padding: 0 20px
+					&:nth-child(2n)
+						margin-left: 20px
+						.box-item-title
+							width: 100%
+							margin-top: 2px
+							margin-left: -5px
+							.sub-title
+								margin-left: 0
+					&:last-child
+						margin-left: 42px
+						.box-item-title
+							width: 100%
+							margin-top: 10px
+				+below(8)
+					width 100%
+					&:first-child,
+					&:nth-child(2n),
+					&:last-child
+						margin: 0 42px 23px !important
+						padding: 0 !important
+					&:nth-child(2n)
+						.box-item-title
+							width:55% !important
+							margin: 6px 0 6px 13px!important
+							.sub-title
+								display: inline !important
+								padding-left: 0px
+					.box-item-title
+						width: 53% !important
+						text-align: left !important
+						padding: 0 !important
+						margin: 11px 0 0 13px!important
+						padding-top: 20px !important
+					.box-item-circle
+						width: 25% !important
+						float: left !important
+				+below(6)
+					width: 100% !important
+					&:first-child,
+					&:nth-child(2n),
+					&:last-child
+						margin 0 !important
+					&:nth-child(2n)
+						.box-item-title
+							width: 100%!important
+							margin: 20px 0 57px!important
+					&:last-child
+						.box-item-title
+							padding: 0px 40px !important
+							margin-top: 22px !important
+							margin-bottom: 38px !important
+					.box-item-circle
+						width: 100% !important
+						float: none !important
+						img
+							text-align: center !important
+							margin: 0 auto !important
+					.box-item-title
+						width: 100% !important
+						margin: 20px 0 40px !important
+						padding: 0 15px !important
+						text-align: center !important
+						font-size: 16px !important
+						line-height: 24px !important
+						height: auto !important
+				&:nth-child(2)
+					.box-item-title
+						padding-left: 11px
+						padding-top: 8px
+						.sub-title
+							padding-left: 4px
+							padding-top: 3px
+				&:last-child
+					padding-left: 11px
+				.box-item-circle
+					display: inline-block
+					float: left
+					width: 120px
+					+below(11)
+						float: none
+						width: 100%
+						img
+							text-align: center
+							margin: 0 auto
+					+below(8)
+						img
+							text-align: left
+							margin 0px
+
+				.box-item-title
+					display: table-cell
+					width: 240px
+					padding-left: 15px
+					font-size: 18px
+					line-height: 27px
+					font-weight: 600
+					letter-spacing: 0.3px
+					height: 124px
+					vertical-align: middle
+					color: #878787
+					+below(11)
+						display: inline-block
+						margin: 0 auto
+						text-align: center
+						padding-left: 0
+					.sub-title
+						display: inline-block
+						color: #878787
+						font-weight: 400
+						line-height: 23px
+						overflow: hidden
+						margin-left: -4px
+						letter-spacing: 0
+	.case-study--content
+		margin-top: 100px
+		padding: 0 15px
+		color: #505050
+		+below(11)
+			max-width 764px
+			margin-top: 68px
+			margin-bottom: 122px
+		+below(8)
+			max-width 562px
+			margin-bottom: 101px
+		+below(6)
+			max-width: 320px
+			margin-bottom: 91px
+		.case-study--main__contain
+			width: 70%
+			float: right
+			padding-left: 43px
+			h2
+				font-size: 42px
+				line-height: 36px
+				margin-bottom: 47px
+				+below(6)
+					font-size: 30px
+					line-height: 28px
+					margin-bottom: 59px
+					margin-left: 10px
+			h3
+				font-size: 24px
+				line-height: 28px
+				margin-bottom: 30px
+				+below(6)
+					font-size: 22px
+					line-height: 32px
+					margin-bottom: 34px
+			p
+				line-height: 32px
+				font-size: 16px
+				margin-bottom: 80px
+				+below(6)
+					line-height: 26px
+					font-size: 14px
+					margin-bottom: 74px
+			blockquote
+				padding-left: 41px
+				line-height: 32px
+				font-size: 16px
+				margin-bottom: 80px
+				position: relative
+				+below(6)
+					padding-left: 30px
+					margin-bottom: 64px
+					p
+						line-height: 26px
+						font-size: 14px
+				&:after
+					content: ''
+					border-left: 15px solid #40a8de
+					height: 90%
+					position: absolute
+					left: 1px
+					top: 10px
+					+below(8)
+						height: 94%
+					+below(6)
+						height: 95%
+						border-left: 8px solid #40a8de
+						top: 6px
+				strong
+					display: block
+					+below(6)
+						padding: 6px 10px
+			+below(11)
+				width 100%
+				margin-left: -15px
+				float: none
+				padding: 0
+				p:last-child
+					margin-bottom: 63px
+			+below(8)
+				width 560px
+				p:last-child
+					margin-bottom: 52px
+			+below(6)
+				max-width: 288px
+				margin: 0
+				padding: 0 6px
+				p:last-child
+					margin-bottom: 40px
+			
+		.case-study--sidebar
+			width: 30%
+			background: #f5f5f5
+			padding: 33px 29px
+			float: right
+			p
+				margin-bottom: 24px
+				font-size: 14px
+				line-height: 24px
+			+below(11)
+				width 760px
+				float: none
+				margin-left: -15px
+				padding: 32px 35px 18px
+			+below(8)
+				width 560px
+				padding: 32px 20px 10px
+			+below(6)
+				margin 0 2%
+				padding 22px 6px 10px 19px
+				width 96%
+	.case-study--footer__blocks
+		margin: 0 auto
+		display: block
+		margin-top: 33px
+		//max-width: 1280px
+		&:before, &:after
+			content: ''
+			display: table
+			clear: both
+		.block-item
+			width: 50%
+			height: 448px
+			float: left
+			position: relative
+			&:first-child
+				.block-item-logo
+					padding: 92px 146px 0
+			&:last-child
+				.block-item-logo
+					padding: 106px 231px 18px
+				.block-item-description
+					margin: 1px 123px 30px
+				.block-item-link
+					margin-left: 208px
+			.block-item-logo
+				display: table-cell
+				height: 75px
+				vertical-align: middle
+
+			.block-item-link
+				display: inline-block
+				background: rgba(0,0,0,0.2)
+				padding: 14px 40px
+				border: 2px solid #9a9a9a
+				border-radius: 5px
+				color: #fff
+				text-transform: uppercase
+				font-weight: bold
+				font-size: 16px
+				margin-left: 184px
+				transition: all .2s linear 0s
+				cursor: pointer
+				&:hover
+					background: rgba(255,255,255,.2)
+
+			.block-item-description
+				color: #fff
+				margin-bottom: 35px
+				font-size: 18px
+				font-weight: 400
+				line-height: 33px
+				margin: 0px 107px 28px
+				width: 380px
+				letter-spacing: 0.9px
+				text-align: center
+	.walk-through
+		background: #0f2942
+		border-top: 0
+		height: 730px
+		+below(5)
+			padding-top 32px
+		.button--try-free
+			padding 0 55px
+			+below(5)
+				line-height 49px
+				padding 0
+		.walk-through__separator
+			padding 0 10px
+			+below(5)
+				line-height 42px
+		.button--walk-through
+			line-height 51px
+			+below(5)
+				font-size 14px
+				line-height 46px
+				width 58%
+		.header--walk-through
+			margin-bottom 51px
+			+below(8)
+				margin-bottom 56px
+			+below(5)
+				margin-bottom 38px
+		&:before
+			top 0
+			background: #40a8de
+			+below(5)
+				width 50px
+				height 10px
+		.title--home
+			color #fff
+			+below(8)
+				font-size 38px
+				margin-bottom 19px
+			+below(5)
+				font-size 28px
+				margin-bottom 11px
+		.title--home-subtitle
+			color #c7c7c7
+			+below(8)
+				font-size 18px
+			+below(5)
+				font-size 16px
+				padding 0 30px
+				line-height 23px
+		.button--request-demo
+			background #acc537
+			border-color #acc537
+			&:hover
+				background #c6df51
+				border-color #c6df51
+		+below(1030px)
+			background-image url() linear-gradient(180deg, #0f2942 0%, #0f2942 93%, #fbb116 77%, #fbb116 100%)
+		+below(9)
+			background-image: url(),linear-gradient(180deg,#0f2942 0%,#0f2942 92%,#fbb116 80%,#fbb116 100%)
+			height 638px !important
+			.container
+				background-size: 92%
+		+below(5)
+			height 525px !important
+			background-image: url(),linear-gradient(180deg,#0f2942 0%,#0f2942 94%,#fbb116 90%,#fbb116 100%)

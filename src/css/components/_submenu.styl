@@ -1,0 +1,306 @@
+
+//submenu component
+
+.submenu
+	display none
+	position relative
+	z-index 9999
+	padding 20px 40px
+	size 100% auto
+	background: bp-white
+	color: colors.submenu-color
+	text-align center
+	background-color #f9f9f9
+	+above(10)
+		size auto
+		padding 33px 40px 24px 40px
+		border-radius 2px
+		text-align left
+	&.submenu--resources
+		&:after
+			background rgba(0, 0, 0, 0) url("../img/rectangle.png") no-repeat scroll center center
+			content " "
+			display inline-block
+			height 12px
+			position absolute
+			left 609px
+			top -12px
+			width 20px
+			+below(12)
+				left 609px
+			+below(11)
+				right 342px
+			+below(10)
+				right 175px
+
+.submenu.opening
+	display: block !important
+
+.submenu__anchor
+	&:hover
+		color: colors.submenu-anchor-hover
+		border-bottom: 1px solid colors.submenu-anchor-hover
+	+below(9)
+		&:hover
+			color: white
+			border-bottom: 1px solid white
+
+.submenu__box
+	margin-bottom 20px
+
+	+above(10)
+		margin-bottom 0
+
+.submenu--product
+	absolute 85px false false 70px
+	width: 100%
+	border 1px solid #c7c7c7
+	.submenu__box--product
+		display table-cell
+		width: 158px
+	&:after
+		background rgba(0, 0, 0, 0) url("../img/rectangle.png") no-repeat scroll center center
+		content " "
+		display inline-block
+		height 12px
+		position absolute
+		left 90px
+		top -12px
+		width 20px
+		+below(12)
+			left 90px
+		+below(10)
+			left 77px
+	.submenu__title
+		margin-top 0
+
+.submenu--why
+	absolute 85px false false -5%
+	size 500px auto
+	border 1px solid #c7c7c7
+	&:after
+		background rgba(0, 0, 0, 0) url("../img/rectangle.png") no-repeat scroll center center
+		content " "
+		display inline-block
+		height 12px
+		position absolute
+		left 77px
+		top -12px
+		width 20px
+		+below(12)
+			left 76px
+		+below(10)
+			left 75px
+	.submenu__title
+		margin-top 0
+.submenu--resources
+	absolute 66px false false 0
+	border 1px solid #c7c7c7
+	padding 20px 32px 24px 38px
+	min-height 316px
+	
+	+above(10)
+		absolute 85px false false 0
+		size 100% auto
+		&:after
+			absolute -10px 22% false false
+
+	+above(13)
+		width 100%
+		max-width 1117px
+		absolute 85px false false 0
+		&:after
+			absolute -10px 190px false false
+.submenu__box--why
+	+above(10)
+		span(1/2)
+
+.submenu__box--resources
+	&:first-child
+		width 198px
+		border-right 1px solid #c7c7c7
+		float left
+
+	&:nth-child(2)
+		width 405px
+		margin-left 28px
+		float left
+	&:nth-child(3)
+		width 370px
+		max-height 256px
+		float right
+		overflow hidden
+		margin-top 10px
+		a
+			background transparent
+			display inline-block
+			img
+				width 370px
+				height auto
+				max-height 256px
+		+below(1130px)
+			width 320px
+		+below(1085px)
+			display none
+	.promotion--image
+		transition: all .5s linear 0s
+		&:hover
+			transform: scale(1.05);
+		&:active
+			transform: scale(1);
+
+.submenu__title
+	margin-top 12px
+	padding 13px 0 20px
+	color: colors.submenu-title
+	font-size: fontSizes.base
+	font-weight 700
+	text-transform uppercase
+
+	+above(10)
+		padding 0 0 20px 0
+
+.submenu__list
+	padding 0
+
+.submenu__item
+	padding 0 0 11px 0
+
+// Sub navigation
+.subnav.subnav--container
+	//position fixed
+	width 100%
+	background #15385B
+	margin 0 -15px
+	padding 0 30px
+	border: 1px solid #505050
+	border-left: 0
+	border-right: 0
+	border-bottom: 0
+	z-index: -1
+	+below(1025px)
+		margin 0 -60px
+	+below(9)
+		position: absolute
+		width: 100%
+		left: 0
+		right: 0
+		border-bottom: 1px solid #fbb116
+		margin: 0 auto
+		padding: 0px
+		.subnav__box
+			padding 0 15px
+			cursor pointer
+	.subnav__title
+		position: relative
+		display: inline-block
+		color: #fbb116
+		font-weight: 400
+		font-size: 12px
+		text-transform: uppercase
+		line-height: 40px
+		padding-right: 34px
+		background: url("../img/right-icon.png")
+		background-repeat: no-repeat
+		background-position: right center
+		&:after
+			//content: ""
+			position: absolute
+			top: 2px
+			right: 0
+			font-weight: 300
+			height: 13px
+			width: 13px
+			border: 1px solid #6e859b
+			border-left: 0
+			border-bottom: 0
+			transform: rotate(45deg)
+		+below(9)
+			padding-right: 25px
+	.subnav__list
+		display: inline-block
+		margin: 0
+		line-height 40px
+		.subnav__item
+			display: inline-block
+			margin: 0 13.5px
+			text-transform: uppercase
+			color: #A4A6A8
+			font-size: 12px
+			&:first-child
+				margin-left: 25px
+			&.current
+				color: #fff
+				font-weight: 700
+				&:hover
+					a
+						color: #fff
+				&:after
+					+below(9)
+						content: ""
+						background-image: url("../img/arr-current.png")
+						background-repeat: no-repeat
+						background-position: center
+						width: 10px
+						position: absolute
+						top: 4px
+						height: 32px
+						right: 15px
+				&.active:after
+					+below(9)
+						-webkit-transform: rotate(180deg)
+						-moz-transform: rotate(180deg)
+						-ms-transform: rotate(180deg)
+						transform: rotate(180deg)
+			&:hover
+				a
+					color: rgb(221, 221, 221)
+			+below(9)
+				display: none !important
+				text-transform: none
+				font-size: 14px
+				&.current
+					display: inline-block !important
+					margin-right: 0
+					margin-left: 12px
+					width: 100%
+					a
+						width: 100%
+						display: inline-block
+
+.submenu--mobile
+	background: #15385b
+	+below(9)
+		text-align left
+		background transparent
+		color #fff
+		padding 0
+		.submenu__item
+			padding-left 15px
+			position relative
+			&:before
+				content ""
+				background-image: url("../img/arr-normal.png")
+				background-repeat: no-repeat
+				background-position: left center
+				width: 8px
+				position: absolute
+				top: 0
+				height: 20px
+				left: 0
+			&.current
+				&:before
+					background-image: url("../img/arr-current.png")
+					-webkit-transform: rotate(-90deg)
+					-moz-transform: rotate(-90deg)
+					-ms-transform: rotate(-90deg)
+					transform: rotate(-90deg)
+				a
+					font-weight: bold
+		.submenu__title
+			color: #fff
+			margin-top: 0
+			padding: 10px 0 15px
+		.submenu__box
+			padding 0 15px
+			margin-bottom 15px

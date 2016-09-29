@@ -1,0 +1,369 @@
+// Pricing Pages
+
+// Pricing Package Mobile Section
+.pricing-package-mobile__section
+	width:80%
+	margin:70px 10% 0 10%;
+	.pricing-package--mobile
+		display:none
+		+below(8)
+			display:block
+			border:1px solid bp-xs-gray
+			margin-bottom:70px
+			text-align:center
+			ul
+				background-color:#f9f9f9;
+				border-bottom:1px solid bp-xs-gray
+				li
+					border-bottom:1px solid bp-xs-gray
+					padding:40px 0
+					margin:0 10%
+					width:80%
+					color:#505050
+					&:last-child
+						border-bottom:none
+					p
+						line-height:40px
+						color:#505050
+			.title-pricing-package
+				color:bp-m-gray
+				font-size:l-font-size
+				font-weight:500
+				margin:0
+				margin-bottom:5px
+				line-height:27px
+				position:relative
+				padding-top:35px
+				&.gray
+					&:before
+						background-color:bp-m-gray
+						content ""
+						display:inline-block
+						height:10px
+						left:50%
+						margin-left:-35px
+						position:absolute
+						top:0
+						width:70px
+				&.orange
+					&:before
+						background-color:bp-extra-fixed
+						content ""
+						display:inline-block
+						height:10px
+						left:50%
+						margin-left:-35px
+						position:absolute
+						top:0
+						width:70px
+				&.red
+					&:before
+						background-color:bp-red
+						content ""
+						display:inline-block
+						height:10px
+						left:50%
+						margin-left:-35px
+						position:absolute
+						top:0
+						width:70px
+		.sub-title-pricing-package
+			color:bp-xs-gray
+			font-size:m-font-size
+			font-weight:700
+			line-height:24px
+			margin:0
+			border-bottom:1px solid bp-xs-gray
+			padding-bottom:30px;
+		.button--walk-through
+			&.button--try-free
+				border:1px solid bp-xs-gray
+				font-size:xs-font-size
+				line-height:18px
+				padding:8px 20px
+				margin:25px 0
+			
+			
+// Pricing Package Section
+.pricing-package__section
+	cf()
+	padding:70px 0 110px 0
+	+below(12)
+		width:94%;
+		margin:0 3%;
+	+below(8)
+		padding 0
+	.column
+		float:left
+		width:20%
+		+below(6)
+			width:33.23%
+		&.first
+			border-left:none
+			border-top:none
+			color:transparent
+			visibility:visible
+			width:40%
+			+below(6)
+				width:0
+			
+	.pricing-package--box
+		border:1px solid bp-xs-gray
+		padding:40px 0
+		position:relative
+		text-align:center
+		border-right:none
+		border-top:none
+		&.last
+			border-right:1px solid bp-xs-gray
+		&.column
+			min-height:205px
+			border-top:1px solid bp-xs-gray
+			border-right:none
+			border-left:1px solid bp-xs-gray
+			&.first
+				border-top:none
+				border-left:none
+			&.last
+				border-right:1px solid bp-xs-gray
+			+below(10)
+				min-height:210px
+			+below(9)
+				min-height:230px
+		+below(10)
+			padding-bottom:20px
+		+below(8)
+			display:none
+		.title-pricing-package
+			color:bp-m-gray
+			font-size:l-font-size
+			font-weight:500
+			margin:0
+			margin-bottom:10px
+			line-height:27px
+			+below(12)
+				font-size:m-font-size
+			+below(6)
+				font-size:xxs-font-size
+			&.gray
+				&:before
+					background-color:bp-m-gray
+					content ""
+					display:inline-block
+					height:10px
+					left:50%
+					margin-left:-35px
+					position:absolute
+					top:0
+					width:70px
+			&.orange
+				&:before
+					background-color:bp-extra-fixed
+					content ""
+					display:inline-block
+					height:10px
+					left:50%
+					margin-left:-35px
+					position:absolute
+					top:0
+					width:70px
+			&.red
+				&:before
+					background-color:bp-red
+					content ""
+					display:inline-block
+					height:10px
+					left:50%
+					margin-left:-35px
+					position:absolute
+					top:0
+					width:70px
+		.sub-title-pricing-package
+			color:bp-l-gray
+			font-size:m-font-size
+			font-weight:700
+			line-height:24px
+			margin:0 0 20px 0
+			+below(12)
+				font-size:s-font-size
+			+below(9)
+				padding:0 5px
+			+below(6)
+				font-size:10px
+		.button--walk-through
+			&.button--try-free
+				background-color:bp-white
+				border:1px solid bp-xs-gray
+				font-size:xs-font-size
+				line-height:18px
+				padding:8px 20px
+	ul
+		li
+			cf()
+			.pricing-package--box
+				&.cell
+					color:bp-l-gray
+					float:left
+					font-size:d-font-size
+					font-weight:600
+					padding:12px 25px
+					position:relative
+					min-height:0
+					width:20%
+					+below(11)
+						font-size:s-font-size
+						padding:10px
+					+below(9)
+						min-height:58px
+					+below(6)
+						width:33.33%
+					&.first
+						position:relative
+						text-align:left
+						width:40%
+						+below(9)
+							padding-right:25px
+						+below(6)
+							width:100%
+							text-align:center
+							padding-top:8px
+							padding-bottom:8px
+							min-height:auto
+						&:after
+							background:rgba(0, 0, 0, 0) url("./../img/sprites.png") no-repeat scroll -34px -53px
+							content " "
+							display:inline-block
+							height:17px
+							position:absolute
+							right:14px
+							width:17px
+							+below(9)
+								height:25px
+								top:15px
+								right:10px
+							+below(6)
+								display:none
+								background:none
+						.tooltips
+							background-color:bp-white
+							border:1px solid #c4c4c4;
+							display:none
+							font-size: 12px
+							padding: 10px
+							position: absolute
+							right: -298px
+							top: 0
+							width: 300px
+							z-index: 10
+							font-weight:200
+							&:before
+								border-bottom: 9px solid transparent
+								border-right: 9px solid #fff
+								border-top: 7px solid transparent
+								content: ""
+								height: 0
+								left: -9px
+								position: absolute
+								top: 13px
+								width: 0
+							&:after
+								content:""
+								position:absolute
+								left:-9px
+								width:9px
+								height:16px
+								background:rgba(0, 0, 0, 0) url("./../img/trihover.png") no-repeat scroll center center
+								top:13px
+					&.checked
+						&:after
+							background:rgba(0, 0, 0, 0) url("./../img/sprites.png") no-repeat scroll -51px -53px
+							content " "
+							display:inline-block
+							height:14px
+							width:15px
+					&.last
+						&:after
+							/*background:none
+							display:none
+							visibility:hidden*/
+			
+			&:first-child
+				background-color:#f9f9f9
+
+			&:nth-child(2n+1)
+				background-color:#f9f9f9
+				
+			&.last-list
+				.cell
+					min-height:80px
+					&.first
+						border-right:none
+						&:after {
+							content:""
+							display:none
+						}
+					.button
+						margin:10px 0 0 0
+			
+.clearfix
+	cf()
+
+// Common Qa Section
+.pricing
+	&.common-qa
+		border-top:1px solid bp-xs-gray
+		padding-top:70px
+		
+.common-qa__section
+	cf()
+	padding-top:35px
+	padding-bottom:120px
+	position:relative
+	+below(12)
+		width:94%
+		margin:0 3%
+	+below(8)
+		width:80%
+		margin:0 10%
+	
+	.title--common-qa
+		color:bp-xs-blue
+		font-size:32px
+		font-weight:600
+		line-height:35px
+		margin:0 0 60px 0
+		+below(12)
+			font-size:30px
+		+below(8)
+			font-size:24px
+		&:before
+			background-color:bp-xs-blue
+			content ""
+			display:inline-block
+			height:10px
+			left:0
+			position:absolute
+			top:0
+			width:70px
+	.common-qa--column
+		col(1/2)
+		padding-right:5%
+		+below(9)
+			col(1)
+		ul
+			margin:0
+			padding:0
+			li
+				font-weight:400
+				last-style:none
+				margin-bottom:40px
+				p
+					margin-bottom:15px
+					color:bp-l-gray
+					font-weight:400
+					font-size:d-font-size
+					+below(11)
+						font-size:s-font-size
+					strong
+						color:bp-l-gray
+						font-weight:600

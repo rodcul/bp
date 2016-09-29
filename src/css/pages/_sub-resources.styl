@@ -1,0 +1,227 @@
+// Sub Resources Styles
+
+.sub--resources--sections
+	.walk-through
+		background-image: url("./../img/walk-through.png"), linear-gradient(180deg, #0f2942 0%, #0f2942 77%, #fbb116 77%, #fbb116 100%)
+		+below(8)
+			background-image none
+			background-color #0F2942
+			border-bottom 10px solid #FBB116
+		&:before
+			top:0
+			background-color:bp-xs-blue
+		.header--walk-through
+			h4
+				color:bp-white
+			h5
+				color:bp-white
+		.walk-through__call-for-action
+			a
+				&.button--request-demo
+					background-color:bp-d-green
+					border:1px solid bp-d-green
+					&:hover
+						background-color:bp-s-green
+	// Sub Resources content
+	.sub-resources__section
+		margin:65px 0
+		.container
+			width:740px
+			margin:0 auto
+			+below(9)
+				width:80%
+				margin-left:10%
+				margin-right:10%
+			.header--learn-more
+				margin-top:30px
+				margin-bottom:70px
+				h4
+					padding-top:25px
+				&:before
+					background-color:bp-extra-fixed
+					content ""
+					display:inline-block
+					height:10px
+					left:50%
+					margin-left:-35px
+					position:relative
+					top:0
+					width:70px
+			h1
+				&.main-title
+					color:bp-l-gray
+					font-weight:700
+					font-size:32px
+					line-height:45px
+					margin-bottom:10px
+					+below(12)
+						font-size 32px
+						line-height 38px
+					+below(11)
+						font-size 32px
+						line-height 38px
+					+below(8)
+						font-size 24px
+						line-height 30px
+			h1
+				font-size:xl-font-size
+				color:bp-l-gray
+				font-weight:700
+				line-height:46px
+				margin:0 0 10px 0
+				+below(12)
+					font-size 32px
+					line-height 38px
+				+below(11)
+					font-size 32px
+					line-height 38px
+				+below(8)
+					font-size 24px
+					line-height 30px
+			h2
+				font-size:l-font-size
+				color:bp-l-gray
+				font-weight:700
+				line-height:30px
+				margin:0 0 10px 0
+				+below(12)
+					font-size 19px
+					line-height 28px
+				+below(11)
+					font-size 19px
+					line-height 28px
+				+below(8)
+					font-size 16px
+					line-height 24px
+			h3
+				font-size:m-font-size
+				color:bp-l-gray
+				font-weight:700
+				line-height:26px
+				margin:0 0 10px 0
+				+below(12)
+					font-size 16px
+					line-height 24px
+				+below(11)
+					font-size 16px
+					line-height 24px
+				+below(8)
+					font-size 14px
+					line-height 20px
+			h4
+				font-size:d-font-size
+				color:bp-l-gray
+				font-weight:700
+				line-height:22px
+				margin:0 0 10px 0
+			h5
+				font-size:s-font-size
+				color:bp-l-gray
+				font-weight:700
+				line-height:20px
+				margin:0 0 10px 0
+			h6
+				font-size:xs-font-size
+				color:bp-l-gray
+				font-weight:700
+				line-height:18px
+				margin:0 0 10px 0
+			span
+				&.date
+					font-size:14px
+					line-height:32px
+					color:bp-m-gray
+					font-weight:200
+					display:block
+					margin-bottom:30px
+			img
+				margin-bottom:40px
+			.wp-caption {
+				max-width:100% !important
+				img {
+					width:100%
+					height:auto
+				}
+			}
+			p
+				font-size:16px
+				line-height:32px
+				color:bp-l-gray
+				margin-bottom:35px
+				+below(8)
+					font-size 14px
+					line-height 22px
+					margin-bottom 20px
+			.wp-caption-text
+				font-size: 14px;
+				position: relative;
+				top: -30px;
+			strong
+				font-weight:700
+			iframe
+				margin-bottom: 30px;
+				min-height: 300px !important;
+				width: 100% !important;
+			ul
+				li
+					list-style:disc inside none
+					font-size:16px
+					line-height:32px
+					color:bp-l-gray
+					padding-left:15px
+					text-indent:-15px
+					&:last-child
+						margin-bottom:35px
+					+below(8)
+						font-size 14px
+						line-height 22px
+						margin-bottom 10px
+
+	// Sub Resources related content
+	.sub-resources__related
+		margin-bottom:120px
+		.container
+			width:740px
+			margin:0 auto
+			+below(9)
+				width:80%
+				margin-left:10%
+				margin-right:10%
+			.header--learn-more
+				margin-bottom: 70px
+				margin-top: 70px
+				&:before
+					background-color: #f3a027
+					content: ""
+					display: inline-block
+					height: 10px
+					left: 50%
+					margin-left: -35px
+					position: relative
+					top: 0
+					width: 70px
+				.title--learn-more
+					padding-top:10px
+			.home-article__image-container
+				height:177px
+				border-top:1px solid #ddd
+				border-left:1px solid #ddd
+				border-right:1px solid #ddd
+				img
+					opacity:0
+			.home-article__content
+				padding:20px
+				text-align:left
+				margin-bottom:0
+				.home-article__description
+					margin-bottom:10px
+					p
+						font-size:13px
+						line-height:21px
+						margin-bottom:10px
+				.home-article__anchor
+					font-size:12px
+					span
+						font-size:14px
+					&:after
+						display:none

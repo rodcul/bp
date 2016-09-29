@@ -1,0 +1,403 @@
+// Careers Page
+
+.clearfix
+	cf()
+
+// founders component
+.founders
+	padding 26px 30px 16px 15px
+	text-align center
+	+below(11)
+		padding 28px 15px 12px
+	+below(7)
+		padding 18px 15px 6px
+.founder__content
+	text-align center
+.founder__box
+	display inline-block
+	text-align center
+	padding 0 15px
+	margin 10px 0
+	&:first-child
+		color bp-m-gray
+		text-transform uppercase
+		font-size s-font-size
+		font-weight 700
+		position relative
+		top -22px
+		+below(9)
+			top -19px
+		+below(8)
+			display block
+			text-align center
+			width 100%
+			top -10px
+.founder__image
+	margin auto
+	max-height 30px
+	padding-top 2px
+	filter grayscale(100%)
+	+below(9)
+		max-height 25px
+	+below(8)
+		max-height 30px
+	+below(5)
+		max-height 25px
+.founder--desktop
+	text-align center
+	+below(8)
+		display none
+	img
+		display inline-block
+.founder--sm-tablet
+	text-align center
+	display none
+	+below(8)
+		display block
+	+below(5)
+		display none
+	img
+		display inline-block
+.founder--mobile
+	text-align center
+	display none
+	+below(5)
+		display block
+	img
+		display inline-block
+
+// career benefits
+.careers--benefits
+	padding 67px 15px 110px
+	+below(11)
+		.container
+			max-width 880px
+	+below(8)
+		padding 70px 15px 90px
+	+below(6)
+		padding 70px 30px 90px
+.title--career
+	margin 0 0 17px 0
+	color: colors.title-home
+	font-size: fontSizes.title-home
+	font-weight 300
+	text-align center
+	line-height 35px
+	padding-right 28px
+	letter-spacing 0
+	+below(12)
+		font-size 30px
+		padding-right 0
+		line-height 36px
+	+below(11)
+		font-size 30px
+		padding-right 0
+		line-height 36px
+	+below(8)
+		font-size 24px
+		padding-right 0
+		line-height 30px
+.title--career-subtitle
+	margin 0
+	color: colors.subtitle-home
+	font-size: fontSizes.subtitle-home
+	font-weight 400
+	text-align center
+	line-height 35px
+	padding-right 15px
+	letter-spacing 0
+	+below(12)
+		font-size 15px
+		padding-right 0
+	+below(11)
+		font-size 15px
+		padding-right 0
+	+below(8)
+		font-size 12px
+		padding-right 0
+.header--benefits
+	margin-bottom 58px
+	+below(8)
+		margin-bottom 50px
+.benefits--cover
+	fluid()
+	margin 35px 0 0 0
+	+below(8)
+		margin 0
+.benefit
+	span(1/4)
+	padding 0 5px
+	color bp-l-gray
+.benefit
+	margin-bottom 6px
+	+below(11)
+		span(1/3)
+		margin-bottom 6px
+	+below(8)
+		span(1/2)
+		margin-bottom 26px
+		text-align center
+	+below(6)
+		margin-bottom 26px
+	+below(5)
+		width 100%
+		min-height 0
+		margin-bottom 50px
+		padding 0
+.benefit--title
+	font-size 18px
+	font-weight 700
+	line-height 30px
+	margin -9px 0 5px
+.benefit__image
+	margin 10px 0 0 0
+	max-width 100%
+	height 40px
+	display inline-block
+	svg
+		max-width 25px
+	+below(11)
+		margin 0
+.benefit__desc
+	color #505050
+	font-size 14px
+	font-weight 400
+	line-height 24px
+	padding-right 41px
+	+below(8)
+		padding-right 0
+		
+//career locations
+.locations--cover
+	fluid()
+.location__box
+	span(1/2)
+	height 400px
+	background-size cover
+	background-position center
+	background-repeat no-repeat
+	overflow hidden
+	position relative
+	.box-shadow
+		opacity 0
+		transition ease .5s all
+	&:hover,&:focus,&:active
+		.location__content
+			opacity 1
+		.location__content >div
+			top 0px
+		.box-shadow
+			opacity 1
+.location__box
+	+below(11)
+		height 427px
+	+below(8)
+		span(1/1)
+	+below(5)
+		height 250px
+
+.location__content
+	width 100%
+	height 100%
+	text-align center
+	color: colors.benefits-color
+	opacity 0
+	transition ease .5s all
+	.location__excerpt
+		font-weight bold
+		font-size xxs-font-size
+		text-transform uppercase
+		color #f9f9f9
+		font-weight 700
+		line-height 18px
+		margin-top 10px
+
+.location__content >div
+	position relative
+	top 50px
+	transition ease .5s all
+.location__head
+	font-size: fontSizes.title-location
+	color #f9f9f9
+	font-weight 700
+	line-height 30px
+	text-transform uppercase
+	
+//careers testimonials
+.careers--testimonials
+	position relative
+	width 100%
+	height auto
+	padding 70px 0 117px
+	.custumer-success__author
+		font-weight bold
+	.custumer-success__role
+		font-weight normal
+.careers--testimonials
+	overflow hidden
+	+below(8)
+		padding 70px 0 25px
+	+below(6)
+		padding 42px 30px 10px
+.careers--testimonials .custumer-success__box
+	position relative
+	+below(8)
+		float none
+		display block
+		text-align left
+		position relative
+		padding-left 170px
+		min-height 120px
+		margin 0 auto 95px
+		width 550px
+		.custumer-success__testimony, .custumer-success__author, .custumer-success__role
+			text-align left
+			+below(6)
+				text-align center
+	+below(6)
+		padding-left 0
+		padding-right 0
+		width 100%
+.careers--testimonials .custumer-success__box .custumer-success__testimony
+	margin 0 0 14px
+	+below(8)
+		min-height: 0 !important
+		height auto
+		padding-left 0
+	+below(6)
+		height auto
+		margin-bottom 10px
+		text-align center
+.careers--testimonials .custumer-success__image
+	margin-bottom 42px
+	text-align center
+	img
+		display inline-block
+		width 115px
+		height auto
+	+below(11)
+		margin-bottom 21px
+	+below(8)
+		position absolute
+		top 0
+		left 15px
+		margin 0
+	+below(6)
+		width 100%
+		left 0
+		position relative
+.careers--testimonials .custumer-success__author, .careers--testimonials .custumer-success__role
+	+below(11)
+		font-size 14px
+	+below(6)
+		text-align center
+//careers jobs
+.careers--jobs
+	background-color: colors.careers-jobs-background
+	position relative
+	padding 70px 15px
+	&:after
+		content ' '
+		absolute 0 0 0 0
+		size 69px 11px
+		background: colors.careers-jobs-monolith
+		margin 0 auto
+.header--jobs
+	text-align center
+
+//careers select drop box
+.careers--jobs select.job__filter
+	background-repeat no-repeat
+	background-color #ffffff
+	background-position center right 10px
+	appearance none
+	cursor pointer
+	border 1px solid #999
+	border-radius 3px
+	color #999
+	height 41px
+	width 135px
+	padding 7px 10px 10px
+	font-size d-font-size
+//add padding on career option
+.careers--jobs select.job__filter option
+	padding:5px 10px
+//careers jobs section
+.jobs__section
+	.comeet-position-header
+		cursor pointer
+		background-color white
+		padding 15px
+		&:hover, &:focus, &:active
+			background-color #fbfbfb
+	.comeet-position-meta, .comeet-position-name
+		margin-bottom 5px
+		font-weight 700
+		color #505050
+		font-size 14px
+		display inline-block
+		margin 0
+		+below(5)
+			display block
+			text-align center
+	.comeet-position-meta
+		float right
+		+below(5)
+			float none
+			margin 0 20px
+	.comeet-group-name
+		font-size m-font-size
+		color #002e4e
+		text-transform uppercase
+		font-weight bold
+		margin 20px 0
+	.comeet-position
+		background-color white
+		margin-bottom 5px
+		font-weight bold
+		color bp-l-gray
+		padding 0
+		display block
+	.comeet-position-description
+		color #505050
+		font-size 14px
+		font-weight 400
+		line-height 24px
+		padding 0px 45px 50px
+		display none
+		h3
+			margin 30px 0 10px
+			font-size 18px
+			font-weight 700
+			line-height 30px
+		p
+			margin-bottom  5px
+		ul
+			list-style-type disc
+			list-style-position inside
+		ul li
+			list-style inherit
+.comeet-g-r
+	margin-bottom 50px
+.jobs__section--job
+	+below(6)
+		font-size xxs-font-size
+	+below(4)
+		text-align center
+		span:last-child
+			float none
+			display block
+
+//Careers Testimonials Animation
+@keyframes careersTestimonialsAnimation {
+  0% {
+  	top: 100px;
+    opacity: 0;
+  }
+  100% {
+  	top: 0;
+    opacity: 1;
+  }
+}
+.careersTestimonialsAnimation
+	animation careersTestimonialsAnimation 3s ease forwards

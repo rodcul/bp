@@ -1,0 +1,186 @@
+// Integrations
+
+.integrations-section--integrations
+	background-color white
+	color #878787
+	padding 50px 15px 40px
+	.integration, .coming-soon-integration
+		padding 0 5px
+		>a
+			background-color #f9f9f9
+			transition ease .5s background-color
+			display inline-block
+			size 100% 100%
+		>a:hover, >a:active
+			background-color #68BFEC
+			svg,path,polygon,rect,circle
+				fill white
+	.nav__anchor--integrations
+		color #b2b2b2
+		border-color #efefef
+		&:hover
+			color #b8b8b8
+			border-color #c7c7c7
+	.nav__anchor--integrations-active
+		border-color #68BFEC
+		color #68BFEC
+		&:hover
+			border-color #68BFEC
+			color #68BFEC
+.coming-soon-integrations--section
+	position relative
+	padding-top 18px
+	&:before
+		content ' '
+		absolute -3px 0 0 0
+		size 50px 11px
+		background bp-red
+		margin 0 auto
+.coming-soon-list-header
+	text-align center
+	margin-bottom 76px
+	margin-top 10px
+	h5
+		margin-top 0
+		font-size xl-font-size
+		font-weight 300
+		color #505050
+	h3
+		font-weight normal
+		margin-top 9px
+		font-size 18px
+.integrations-section--integrations .integration, .coming-soon-integration
+	transition ease .5s background-color
+	svg,path,polygon,rect,circle
+		fill #7f7f7f
+		transition ease .5s all
+
+// Sub integration
+// products product component
+.sub-integration-section
+	color bp-l-gray
+	padding 70px 40px 120px
+	border-top 1px solid #c7c7c7
+	background-color white
+	.sub-integration-section__content
+		line-height 27px
+		span(1/2)
+		margin 0
+		+below(8)
+			span(1/1)
+	.sub-integration-section__image
+		span(1/2)
+		text-align center
+		padding-top 40px
+		float right
+		padding 40px 15px 0
+		+below(8)
+			span(1/1)
+			text-align center
+			margin 0 0 45px
+			padding 0
+		img
+			display inline-block
+.sub-integration-section:first-child
+	border-top none
+.sub-integration-section:nth-child(even)
+	background-color #f5f5f5
+	.sub-integration-section__image
+		float left
+		+below(8)
+			float none
+// Solution Header
+.sub-integration-section__header
+	.title
+		margin 15px 0
+		line-height 48px
+.product__title
+	font-size 32px
+	margin 10px 0 5px
+.product__subtitle
+	font-size 25px
+	margin 0
+	font-weight 400
+	line-height	1
+.sub-integration-section__strip-line
+	size 49px 11px
+	background-color bp-red
+
+.sub-integration-section:nth-child(2n) .sub-integration-section__strip-line
+	size 49px 11px
+	background-color bp-xxs-orange
+
+//product content
+.sub-integration-section__content
+	margin-top 20px
+	font-size d-font-size
+	strong
+		display block
+		margin 20px 0 10px
+	ul li
+		position relative
+		padding-left 20px
+		margin-bottom 10px
+	ul li:before
+		content ''
+		display inline-block
+		size 10px 10px
+		margin-right 10px
+		position absolute
+		left 0
+		top 5px
+		background-color bp-red
+	p
+		margin 0 0 10px
+	a
+		color #40A8DE
+		&:hover, &:focus, &:active
+			color #68bfec
+
+
+.sub-integration-section__learnmore
+	margin 30px 0 0
+	+below(7)
+		text-align center
+	.button
+		display inline-block
+		border 2px solid #c7c7c7
+		text-transform uppercase
+		padding 15px 25px
+		color bp-xxs-blue
+		font-weight bold
+//product Image
+.sub-integration-section__image
+	overflow hidden
+	img
+		position relative
+		opacity 0
+		left 100px
+	+below(11)
+		margin-top 80px
+//Solution Image Animation
+@keyframes instegrationLeftIMageAnimation {
+  0% {
+  	left: -100px;
+    opacity: 0;
+  }
+  100% {
+  	left: 0;
+    opacity: 1;
+  }
+}
+.instegrationLeftIMageAnimation
+	animation instegrationLeftIMageAnimation 3s ease forwards
+
+@keyframes instegrationRightIMageAnimation {
+  0% {
+  	left: 100px;
+    opacity: 0;
+  }
+  100% {
+  	left: 0;
+    opacity: 1;
+  }
+}
+.instegrationRightIMageAnimation
+	animation instegrationRightIMageAnimation 3s ease forwards
