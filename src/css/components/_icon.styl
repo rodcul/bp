@@ -1,0 +1,14 @@
+// icon component
+
+social = tt $icon-tt $icon-tt-active, li $icon-li $icon-li-active
+
+for icon in social
+	.icon--{icon[0]}
+		sprite(icon[1])
+		hide-text()
+		display inline-block
+		transition none
+		margin-right 5px
+
+		&:hover
+			sprite(icon[2])

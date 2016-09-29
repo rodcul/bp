@@ -1,0 +1,39 @@
+// mixins
+
+bp-hide-text()
+	hide-text()
+	display block
+	size inherit
+
+// css sprite mixins
+
+spriteWidth($sprite) {
+	width: $sprite[4];
+}
+
+spriteHeight($sprite) {
+	height: $sprite[5];
+}
+
+spritePosition($sprite) {
+	background-position: $sprite[2] $sprite[3];
+}
+
+spriteImage($sprite) {
+	background-image: url($sprite[8]);
+}
+
+sprite($sprite, $has_size = true) {
+	spriteImage($sprite)
+	spritePosition($sprite)
+	spriteWidth($sprite) if $has_size
+	spriteHeight($sprite) if $has_size
+}
+
+// lines of mobile navigation button
+
+line($color, $width, $transition)
+	display inline-block
+	size $width ($width/7)
+	background $color
+	transition $transition

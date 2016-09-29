@@ -1,0 +1,54 @@
+// 404 Page
+
+.error-page
+	height 100vh
+	text-align center
+	background-image: url('../img/error_404.jpg')
+	background-size cover
+	background-repeat no-repeat
+	background-position center
+	display table
+	width 100%
+	+below(8)
+		position fixed
+		top 0
+		left 0
+.error-page-table-cell
+	display table-cell
+	size 100% 100%
+	text-align center
+	vertical-align middle
+	color white
+	.text-404
+		font-size 212px
+		font-weight 800
+		opacity .05
+		line-height 1.23
+		+below(5)
+			font-size 180px
+		+below(4)
+			font-size 160px
+	.text-error
+		font-size 22px
+		opacity .2
+		font-weight 700
+		margin-bottom 40px
+		+below(5)
+			font-size 18px
+		+below(4)
+			font-size 16px
+	.error-home-link a
+		color white
+		font-size 16px
+		font-weight 600
+		width 230px
+		border 1px solid white
+		border-radius 3px
+		display inline-block
+		padding 18px 0
+		transition all .2s linear 0s;
+		text-transform uppercase
+		&:hover
+			background-color rgba(255,255,255,.2)
+		&:active
+			background rgba(22, 14, 68, 0.2)

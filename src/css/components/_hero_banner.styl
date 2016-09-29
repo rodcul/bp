@@ -1,0 +1,988 @@
+// Hero Banner Definitions List
+// 00. General Hero Component
+// 01. Career Hero Banner
+// 02. Resources Hero Banner
+// 03. Resources News Category Hero Banner
+// 04. Solutions Hero Banner
+// 05. Products Hero banner
+// 06. Sub Products Hero banner
+// 07. Case Studies Hero Banner
+// 08. Sitemap Hero Banner
+// 09. Contact Hero Banner
+// 10. BuyNow Hero Banner
+// 11. About Hero Banner
+// 12. Integrations Hero Banner
+// 13. Sub Integrations Hero Banner
+// 14. Sub Resources Hero Banner
+// 15. Pricing Hero Banner
+// 16. Sub Solutions Hero Banner
+// 17. Privacy Hero Banner
+// 18. Homepage Hero Banner
+// 99. Additional Settings
+
+
+// 00. General Hero Component
+.carousel
+	size 100% 315px
+	+above(10)
+		size 100% 600px
+.carousel__slide
+	position relative
+	size 100%
+	background url('../img/_hero_temp.jpg') no-repeat 50% 0%
+	background-size cover
+.carousel__content
+	absolute 0 false false 0
+	z-index 99
+	size 100% auto
+	padding 0 50px
+	text-align center
+	color bp-white
+	+above(10)
+		absolute 210px false false 0
+		padding 0
+.carousel__button
+	margin-bottom 25px
+.carousel__anchor
+	position relative
+	display inline-block
+	margin 0 0 0 0
+	color: colors.carousel-anchor
+	font-size: fontSizes.carousel-sm-anchor
+	font-weight 700
+	text-transform uppercase
+	transition all 0.2s linear 0s
+	span
+		position: absolute
+		top: 0
+		left: -25px
+		bottom: 0
+		right: 0
+		sprite($icon-play-active)
+		opacity: 0
+		transition all 0.2s linear 0s
+
+	&:before
+		content ' '
+		display inline-block
+		absolute 0 false false -25px
+		sprite($icon-play)
+		transition none
+
+	&:hover
+		color: colors.carousel-anchor-hover
+		text-decoration:underline
+		span {
+			opacity:1
+		}
+	+above(10)
+		font-size: fontSizes.carousel-anchor
+.carousel__line
+	position relative
+	height 20px
+	&:before
+		background-color #f3a027
+		bottom 0
+		content " ";
+		display block;
+		height 10px;
+		left 0;
+		margin 0 auto;
+		right 0;
+		top 70px;
+		width 69px;
+.carousel--home
+	.title--hero
+		font-size 52px
+		font-weight 500
+		padding-right 23px
+		letter-spacing 0.001em
+		+below(12)
+			font-size 40px
+		+below(11)
+			font-size 38px
+			padding-right 0
+		+below(8)
+			font-size 24px
+	.title--hero-subtitle
+		font-size 21px
+		padding-right 20px
+		+below(12)
+			font-size 20px
+		+below(11)
+			font-size 18px
+			padding-right 0
+		+below(8)
+			font-size 14px
+.solutions-solution__header
+	.solution__title
+		font-size 32px
+		+below(12)
+			font-size 30px
+		+below(11)
+			font-size 30px
+		+below(8)
+			font-size 24px
+	.solution__subtitle
+		font-size 25px
+		+below(12)
+			font-size 22px
+			line-height 28px
+		+below(11)
+			font-size 22px
+			line-height 28px
+		+below(8)
+			font-size 16px
+			line-height 24px
+.solutions-solution__challenge, .solutions-solution__solution
+	font-size 16px
+	+below(12)
+		font-size 16px
+		line-height 24px
+	+below(11)
+		font-size 14px
+		line-height 22px
+	+below(8)
+		font-size 14px
+		line-height 22px
+	+below(5)
+		line-height 24px
+.carousel--single__headline
+	.title--hero
+		font-size 42px
+		+below(12)
+			font-size 40px
+		+below(11)
+			font-size 38px
+		+below(8)
+			font-size 24px
+	.title--hero-subtitle
+		font-size 21px
+		+below(12)
+			font-size 20px
+		+below(11)
+			font-size 18px
+		+below(8)
+			font-size 14px
+
+// 01. Career Hero Banner
+.carousel--career
+	size 100% 500px
+	+below(17)
+		height 500px
+	+below(12)
+		height 350px
+	+below(8)
+		height 230px
+	.button--carousel
+		background-color colors.button-carousel-careers-background
+		margin-right 18px
+		padding 18px 26px 17px
+		&:hover
+			background-color #5AC2F8
+		&:active
+			background-color #278FC5
+	.carousel__content
+		top 170px
+		+below(17)
+			top 150px
+		+below(12)
+			top 70px
+		+below(9)
+			top 55px
+		+below(8)
+			top 30px
+		+below(5)
+			padding 15px 40px
+	.title--hero
+		font-weight 600
+		line-height 68px
+		margin-top 35px
+		padding-right 25px
+		margin-bottom 9px
+		font-size 42px
+		+below(12)
+			font-size 40px
+		+below(11)
+			font-size 38px
+			line-height 46px
+		+below(8)
+			margin 0
+			padding-right 0
+			font-size 24px
+			line-height 34px
+	.title--hero-subtitle
+		font-size 21px
+		display inline-block
+		font-weight 400
+		letter-spacing 0.001em
+		line-height 32px
+		padding-right 20px
+		width 560px
+		+below(12)
+			font-size 20px
+			line-height 28px
+			margin-bottom 20px
+		+below(11)
+			font-size 18px
+			line-height 24px
+		+below(8)
+			font-size 14px
+			width 300px
+			padding-right 0
+		+below(5)
+			width 100%
+	.carousel__button
+		.button--carousel
+			background-color #40a8de
+			padding 18px 25px 17px
+			margin-right 20px
+			+below(8)
+				display none
+
+// 02. Resources Hero Banner
+.carousel--resources
+	size 100% 500px
+	+below(17)
+		height 400px
+	+below(12)
+		height 350px
+	+below(8)
+		height 230px
+	.carousel__content
+		top 200px
+		+below(17)
+			top 170px
+		+below(12)
+			top 140px
+		+below(9)
+			top 100px
+		+below(8)
+			top 60px
+		+below(5)
+			padding 15px 40px
+	.title--hero
+		margin 0 0 23px
+		font-weight 600
+		font-size 42px
+		+below(12)
+			font-size 40px
+		+below(11)
+			font-size 38px
+		+below(8)
+			font-size 24px
+	.title--hero-subtitle
+		font-size 21px
+		+below(12)
+			font-size 20px
+		+below(11)
+			font-size 18px
+		+below(8)
+			font-size 14px
+	.carousel__line:before
+		background-color #e95c25
+	.carousel__slide
+		background-size cover
+
+// 03. Resources News Category Hero Banner
+.carousel--resources-news-category
+	size 100% 500px
+	+below(17)
+		height 450px
+	+below(12)
+		height 350px
+	+below(8)
+		height 230px
+	.carousel__slide
+		background-size cover
+	.carousel__content
+		top 200px
+		+below(17)
+			top 190px
+		+below(12)
+			top 140px
+		+below(9)
+			top 100px
+		+below(8)
+			top 45px
+		+below(5)
+			padding 15px 40px
+	.carousel__line:before
+		background-color #40a8de
+	.title--hero
+		font-weight 600
+		line-height 68px
+		margin 0 0 23px
+		font-size 42px
+		+below(12)
+			font-size 40px
+		+below(11)
+			font-size 38px
+		+below(8)
+			font-size 24px
+		+below(5)
+			margin-bottom 10px
+	.title--hero-subtitle
+		font-size 21px
+		+below(12)
+			font-size 20px
+		+below(11)
+			font-size 18px
+		+below(8)
+			font-size 14px
+
+// 04. Solutions Hero Banner
+.carousel--solutions
+	size 100% 500px
+	+below(17)
+		height 450px
+	+below(12)
+		height 350px
+	+below(8)
+		height 230px
+	+below(5)
+		height 179px
+	.button--carousel
+		background-color: colors.button-carousel-careers-background
+	.carousel__content
+		top 190px
+		+below(17)
+			top 170px
+		+below(12)
+			top 120px
+		+below(9)
+			top 50px
+		+below(8)
+			top 25px
+		+below(5)
+			padding 0 10px
+	.title--hero
+		letter-spacing 0.005em
+		padding-right 25px
+		font-size 42px
+		line-height 40px
+		margin-bottom 25px
+		margin-top 0
+		+below(12)
+			font-size 40px
+			padding-right 0
+			line-height 40px
+			margin-bottom 25px
+		+below(11)
+			font-size 38px
+			padding-right 0
+			line-height 38px
+			margin-bottom 25px
+		+below(8)
+			font-size 24px
+			padding-right 0
+			line-height 24px
+			margin-bottom 25px
+		+below(5)
+			margin-bottom 6px
+			line-height 36px
+			letter-spacing 0
+	.title--hero-subtitle
+		max-width 550px
+		margin 0 auto 31px
+		font-size 20px
+		letter-spacing 0.025em
+		padding-right 20px
+		font-size 21px
+		line-height 28px
+		+below(12)
+			font-size 20px
+			padding-right 0
+			line-height 26px
+		+below(11)
+			margin 0 auto 21px
+			font-size 18px
+			padding-right 0
+			line-height 24px
+		+below(8)
+			font-size 14px
+			padding-right 0
+			line-height 20px
+		+below(5)
+			letter-spacing 0
+			line-height 16px
+			margin-bottom 18px
+	.carousel__slide
+		background-size	cover
+	.carousel__line
+		height 11px
+		&:before
+			+below(5)
+				width 39px
+				height 9px
+
+// 05. Products Hero banner
+.carousel--products
+	height 700px
+	overflow hidden
+	+below(12)
+		height 700px
+	+below(10)
+		height 600px
+	+below(9)
+		height 500px
+	+below(8)
+		height 450px
+	+below(7)
+		height 380px
+	+below(6)
+		height 340px
+	.button--carousel
+		background-color: colors.button-carousel-careers-background
+	.carousel__content
+		+below(5)
+			padding 15px
+	.title--hero
+		margin-bottom 5px
+		font-size 42px
+		+below(12)
+			font-size 40px
+		+below(11)
+			font-size 38px
+		+below(9)
+			margin-top 20px
+		+below(8)
+			font-size 24px
+	.title--hero-subtitle
+		max-width 550px
+		margin 0 auto 27px
+		font-size 21px
+		+below(12)
+			font-size 20px
+		+below(11)
+			font-size 18px
+		+below(8)
+			font-size 14px
+	.carousel__slide
+		background-image: linear-gradient(180deg, #0F2942 0%, #0F2942 95%, colors.walk-through-background 95%, colors.walk-through-background 100%)
+	.carousel__content
+		top 150px
+		+below(9)
+			top 50px
+		+below(6)
+			top 0
+		.product__carousel__image
+			text-align center
+			position relative
+			top 25px
+			opacity 1
+			.container
+				max-width 940px
+				padding 0 15px
+			img
+				display inline-block
+	.carousel__line:before
+		background-color bp-xs-blue
+
+// 06. Sub Products Hero banner
+.carousel--sub_products
+	size 100% 500px
+	+below(17)
+		height 450px
+	+below(12)
+		height 420px
+	+below(768px)
+		height 230px
+	.carousel__content
+		top 170px
+		+below(17)
+			top 180px
+		+below(12)
+			top 160px
+		+below(9)
+			top 100px
+		+below(8)
+			top 54px
+		+below(5)
+			top 38px
+			//padding 15px 40px
+	.title--hero
+		font-weight 500
+		line-height 34px
+		font-size 42px
+		margin-bottom 25px
+		+below(12)
+			font-size 40px
+			line-height 34px
+			margin 0 0 24px
+		+below(11)
+			font-size 38px
+			line-height 30px
+			margin 0 0 20px
+		+below(8)
+			font-size 24px
+			line-height 20px
+			margin-bottom 0 0 10px
+	.title--hero-subtitle
+		font-weight 400
+		line-height 32px
+		width 380px
+		display inline-block
+		font-size 21px
+		+below(12)
+			font-size 20px
+			line-height 26px
+		+below(11)
+			font-size 18px
+			line-height 24px
+		+below(8)
+			width 300px
+			line-height 23px
+			font-size 14px
+		+below(5)
+			width 100%
+	.carousel__line
+		height 11px
+		&:before
+			background-color #f0453b
+
+// 07. Case Studies Hero Banner
+.carousel--case-studies
+	height 230px
+	@media only screen and (min-width: 768px) {
+		height 300px
+	}
+	@media only screen and (min-width: 1280px) {
+		height 350px
+	}
+	@media only screen and (min-width: 1920px) {
+		height 400px
+	}
+	.carousel__content
+		padding 0
+		top 70px
+		@media only screen and (min-width: 768px) {
+			top 99px
+		}
+		@media only screen and (min-width: 1280px) {
+			top 128px
+		}
+		@media only screen and (min-width: 1920px) {
+			top 131px
+		}
+		.carousel__logo
+			text-align center
+			width 320px
+			height 72px
+			max-height 72px
+			margin 0 auto 10px
+			overflow hidden
+			@media only screen and (min-width: 768px) {
+				width 400px
+				height 90px
+				max-height 90px
+			}
+			img
+				display block
+				margin 0 auto
+				max-width 100%
+	.title-hero
+		margin: 0 0 2px
+	.carousel__line
+		height 25px
+		&:before
+			background: #e95c25
+			height: 11px
+			position: absolute
+			top: -10px
+	.sub-title
+		font-size 18px
+		font-weight 400
+		line-height 15px
+
+// 08. Sitemap Hero Banner
+.carousel--sitemap
+	size 100% 500px
+	+below(17)
+		height 400px
+	+below(12)
+		height 350px
+	+below(8)
+		height 230px
+	.carousel__content
+		top 200px
+		+below(17)
+			top 170px
+		+below(12)
+			top 140px
+		+below(9)
+			top 100px
+		+below(8)
+			top 40px
+		+below(5)
+			padding 15px 40px
+	.title--hero
+		margin 0 0 23px
+		font-weight 600
+	.carousel__line:before
+		background-color #e95c25
+	.carousel__slide
+		background-size cover
+
+// 09. Contact Hero Banner
+.carousel--contact
+	size 100% 449px
+	+below(7)
+		height 360px
+	.button--carousel
+		background-color: colors.button-carousel-careers-background
+	.carousel__content
+		top 125px
+		+below(9)
+			top:60px
+		+below(5)
+			padding 15px
+			top 37px
+		.title--hero
+			+below(6)
+				margin-top:0
+	.title--hero
+		font-size 42px
+		+below(12)
+			font-size 40px
+		+below(11)
+			font-size 38px
+		+below(8)
+			font-size 24px
+	.title--hero-subtitle
+		max-width 550px
+		margin 0 auto 31px
+		font-size 21px
+		+below(12)
+			font-size 20px
+		+below(11)
+			font-size 18px
+		+below(8)
+			font-size 14px
+
+// 10. BuyNow Hero Banner
+.carousel--buynow
+	size 100% 467px
+	+below(9)
+		height 280px
+	.button--carousel
+		background-color: colors.button-carousel-careers-background
+	.carousel__content
+		top 145px
+		+below(5)
+			padding 15px
+	.title--hero
+		font-size 42px
+		font-weight 600
+		+below(12)
+			font-size 40px
+		+below(11)
+			font-size 38px
+		+below(8)
+			font-size 24px
+	.title--hero-subtitle
+		max-width 550px
+		margin 0 auto 31px
+		font-size 21px
+		+below(12)
+			font-size 20px
+		+below(11)
+			font-size 18px
+		+below(8)
+			font-size 14px
+
+// 11. About Hero Banner
+.carousel--about
+	size 100% 449px
+	+below(9)
+		height 280px
+	.button--carousel
+		background-color: colors.button-carousel-careers-background
+	.carousel__content
+		top 150px
+		+below(17)
+			top 150px
+		+below(12)
+			top 150px
+		+below(9)
+			top 55px
+		+below(8)
+			top 10px
+	.title--hero
+		font-size 42px
+		+below(12)
+			font-size 40px
+		+below(11)
+			font-size 38px
+		+below(8)
+			font-size 24px
+	.title--hero-subtitle
+		max-width 550px
+		margin 0 auto 31px
+		font-size 21px
+		+below(12)
+			font-size 20px
+		+below(11)
+			font-size 18px
+		+below(8)
+			font-size 14px
+
+// 12. Integrations Hero Banner
+.carousel--integrations
+	size 100% 500px
+	+below(17)
+		height 450px
+	+below(12)
+		height 350px
+	+below(8)
+		height 230px
+	.button--carousel
+		background-color: colors.button-carousel-careers-background
+	.carousel__content
+		top 200px
+		+below(17)
+			top 190px
+		+below(12)
+			top 140px
+		+below(9)
+			top 100px
+		+below(8)
+			top 57px
+		+below(5)
+			padding 15px 40px
+	.title--hero
+		margin 0 0 8px
+		font-size 42px
+		+below(12)
+			font-size 40px
+		+below(11)
+			font-size 38px
+		+below(8)
+			font-size 24px
+	.title--hero-subtitle
+		max-width 550px
+		margin 0 auto 31px
+		font-size 21px
+		+below(12)
+			font-size 20px
+		+below(11)
+			font-size 18px
+		+below(8)
+			font-size 14px
+	.carousel__slide
+		background-size cover
+	.carousel__logo
+		text-align center
+		+below(9)
+			margin-top 50px
+	.carousel__logo img
+		display inline-block
+
+// 13. Sub Integrations Hero Banner
+.carousel--sub--integrations
+	svg
+		width 280px
+		height auto
+		fill white
+		+below(4)
+			width 100%
+	.carousel__line:before
+		background-color #33899a
+	&.carousel--integrations
+		.carousel__content
+			+below(8)
+				top 0
+
+// 14. Sub Resources Hero Banner
+.carousel--sub_resources
+	size 100% 300px
+	+below(9)
+		height 280px
+	+below(9)
+		height 230px
+	.button--carousel
+		background-color: colors.button-carousel-careers-background
+	.carousel__content
+		top:125px
+		+below(9)
+			top:0
+		+below(5)
+			padding 15px
+	.title--hero
+		font-size 42px
+		+below(12)
+			font-size 40px
+		+below(11)
+			font-size 38px
+		+below(8)
+			font-size 24px
+	.title--hero-subtitle
+		max-width 550px
+		margin 0 auto 31px
+		font-size 21px
+		+below(12)
+			font-size 20px
+		+below(11)
+			font-size 18px
+		+below(8)
+			font-size 14px
+	.carousel__line
+		position relative
+		background-color #68bfec
+		content " "
+		display block
+		size 69px 11px
+		margin 0 auto
+		&:before
+			display none
+
+// 15. Pricing Hero Banner
+.carousel--pricing
+	height:500px
+	.carousel__slide
+		.carousel__content
+			top 190px
+	+below(17)
+		height:450px
+		.carousel__slide
+			.carousel__content
+				top 190px
+	+below(12)
+		height:350px
+		.carousel__slide
+			.carousel__content
+				top 140px
+	+below(9)
+		.carousel__slide
+			.carousel__content
+				top 90px
+	+below(8)
+		height:230px
+		.carousel__slide
+			.carousel__content
+				top 30px
+	+below(5)
+		.carousel__slide
+			.carousel__content
+				top 62px
+	.carousel__slide
+		background-size cover
+		.carousel__content
+			+below(5)
+				padding 15px
+			.title--hero
+				font-size 42px
+				margin-bottom 20px
+				+below(12)
+					font-size 40px
+				+below(11)
+					font-size 38px
+				+below(8)
+					font-size 24px
+					margin-top 0
+			.carousel__line
+				&:before
+					background-color #4ca9de
+
+// 16. Sub Solutions Hero Banner
+.carousel--sub_solutions
+	size 100% 555px
+	+below(17)
+		height:505px
+	+below(12)
+		height:405px
+	+below(8)
+		height:285px
+	.button--carousel
+		background-color: colors.button-carousel-careers-background
+	.carousel__content
+		top 230px
+		+below(17)
+			top 210px
+		+below(12)
+			top 160px
+		+below(9)
+			top 90px
+		+below(8)
+			top 64px
+		+below(5)
+			padding 0 40px
+	.title--hero
+		margin 0 0 25px 0
+		font-size 40px
+		line-height 40px
+		+below(12)
+			margin 0 0 25px 0
+			font-size 40px
+			line-height 40px
+		+below(11)
+			font-size 38px
+			line-height 38px
+			margin 0 0 25px 0
+		+below(8)
+			font-size 24px
+			line-height 24px
+			margin 0 0 25px 0
+	.title--hero-subtitle
+		max-width 550px
+		margin 0 auto 31px
+		+below(11)
+			margin 0 auto 21px
+	.carousel__slide
+		background-size	cover
+	.carousel__line
+		height 11px
+		&:before
+			background-color #f0453b
+
+// 17. Privacy Hero Banner
+.carousel--single__headline
+	size 100% 300px
+	+below(9)
+		height 260px
+	.button--carousel
+		background-color: colors.button-carousel-careers-background
+	.carousel__content
+		top:125px
+		+below(6)
+			top:76px
+		+below(5)
+			padding 15px
+	.title--hero
+		&.blue
+			&:after
+				background-color:bp-xs-blue
+				content ""
+				display:inline-block
+				height:10px
+				left:50%
+				margin-left:-35px
+				position:absolute
+				bottom:-10px
+				width:70px
+		+below(6)
+			margin-top:0
+	.title--hero-subtitle
+		max-width 550px
+		margin 0 auto 31px
+
+// 18. Homepage Hero Banner
+.carousel--home
+	height 370px
+	+above(10)
+		height 600px
+	.carousel__content
+		+below(10)
+			top 50px
+
+// 99. Additional Settings
+@keyframes productCarouselImage {
+  0% {
+  	top: 70px;
+  	opacity: 0;
+  }
+  100% {
+  	top: 20px;
+  	opacity: 1;
+  }
+}

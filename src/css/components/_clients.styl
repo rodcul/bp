@@ -1,0 +1,75 @@
+
+// clients component
+
+.client
+	padding 28px 0 20px
+	+below(8)
+		padding 0 0 13px
+.client__logo-box
+	cf()
+	+above(11)
+		float left
+		width 85.7%
+
+.client__content
+	padding 0 15px
+.client--desktop
+	text-align center
+	+below(8)
+		display none
+	img
+		display inline-block
+.client--sm-tablet
+	text-align center
+	display none
+	+below(8)
+		display block
+	+below(5)
+		display none
+	img
+		display inline-block
+.client--mobile
+	text-align center
+	display none
+	+below(5)
+		display block
+	img
+		display inline-block
+.client__box
+	text-align center !important
+	color bp-m-gray
+	text-transform uppercase
+	font-weight 700
+
+	+between(1,11)
+		margin-bottom 7px
+
+	+above(11)
+		padding 15px 0 0 0
+		float left
+		width 14.3%
+		font-size: fontSizes.client-label
+
+.client__logo
+	table-layout fixed
+	display table
+	.vertical-align--middle
+		height 51px
+		text-align center
+		width 100%
+		+below(8)
+			display inline-block
+		+below(5)
+			display table-cell
+	img
+		display inline-block
+	+between(1, 8)
+		col(1/3, cycle: 3)
+		margin-bottom 10px
+
+	+above(9)
+		col(1/6, uncycle: 3, cycle:6)
+
+
+.client__image
+	margin auto

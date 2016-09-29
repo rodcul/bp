@@ -1,0 +1,162 @@
+// Buy-now Page
+
+// buynow subscription section
+.buynow--subscription__section
+	width 866px
+	background-color white
+	border 1px solid #ddd
+	border-radius 4px
+	margin -220px auto 120px
+	padding 0 43px
+	position relative
+	z-index 100
+	padding-top 50px
+	+below(10)
+		width 80%
+		margin-left 10%
+		margin-right 10%
+		padding:10px 20px
+	+below(7)
+		width 90%
+		margin-left 5%
+		margin-right 5%
+		padding 41px 28px 0
+	&:before
+		content ''
+		width 69px
+		height 11px
+		background-color #e95c25
+		display block
+		absolute -1px 0 0
+		margin 0 auto
+.buynow--subscription__section .title--buynow
+	color bp-l-gray
+	font-size 24px
+	font-weight 400
+	line-height 35px
+	text-align center
+	border-bottom 1px solid bp-xs-gray
+	padding-bottom 30px
+	margin 0
+.buynow--cover
+	margin 30px 0 60px
+.form-field
+	display inline-block
+	width 55%
+	float left
+	padding 0 22.5px
+	+below(8)
+		width:100%
+		float:none
+	.form-field-inner
+		width 100%
+	.input-field
+		margin-bottom 20px
+		label
+			display block
+			font-size xs-font-size
+			margin-bottom 8px
+			width 100%
+			font-weight 700
+			line-height 12px
+			color bp-m-gray
+			span
+				color bp-red
+		input, select
+			border 1px solid bp-s-gray
+			font-size xs-font-size
+			padding 10px
+			width 100%
+			border-radius 2px
+		select
+			height 40px
+			background-color white
+			background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAALCAYAAACprHcmAAAAiElEQVQYV5WR3QnDMAyET3iRjNA83jRtJugKyQbdoJ7GB37JClnEUBJwcX4MsR4lfdLpZGgIa+jF1iypI7nUwFy3GOMjpTQDGEj6IyDpBeDrnOu3ySGEj5m9AYwkpwwU+Ynk+NecJwDwJAdJ65ZnuXF3YAGs+rujtJMbBXC64dK6mjvtPt99zA8jPzaaOXMB1QAAAABJRU5ErkJggg==")
+			background-repeat no-repeat
+			background-color #ffffff
+			background-position center right 10px
+			-webkit-appearance none
+			-moz-appearance none
+			appearance none
+			cursor pointer
+			width 100%
+
+
+	.submit-field
+		input
+			background-color bp-xs-blue
+			color bp-white
+			font-size xs-font-size
+			font-weigh 700
+			padding 15px 0
+			text-align center
+			text-transform uppercase
+			width 100%
+			border-radius 2px
+			transition all .2s linear 0s
+			&:hover
+				background-color #5ac2f8
+.buynow--pricing
+	display inline-block
+	width 45%
+	float left
+	padding 0 22.5px
+	+below(8)
+		width:100%
+.buynow--save-price
+	color bp-d-green
+	font-size 13px
+	font-weight 700
+	line-height 12px
+	padding 9px 0
+.buynow--secure-message
+	font-size xs-font-size
+	font-weight 700
+	line-height 12px
+	text-align center
+	margin 29px 0 17px
+	color bp-m-gray
+.buynow--secure-logos
+	text-align center
+	img
+		display inline-block
+
+.buynow--pricing__box
+	border 1px solid #ddd
+	padding 29px 0px 27px
+	margin-top 20px
+.buynow--pricing__box--header 
+	color bp-l-gray
+	text-align center
+	padding 0 30px
+	h3
+		font-size l-font-size
+		font-weight 300
+		line-height 22px
+		margin 0 0 12px
+	p
+		font-size d-font-size
+		font-weight 600
+		line-height 24px
+		margin-bottom 25px
+.buynow--pricing__box--features
+	background-color #F9F9F9
+	padding 30px 0
+	border-top 1px solid bp-xs-gray
+	border-bottom 1px solid bp-xs-gray
+	text-align center
+	color bp-m-gray
+	font-size 14px
+	font-weight 400
+	line-height 32px
+.buynow--pricing__box--link
+	text-align center
+	padding-top 29px
+	a
+		color bp-xs-blue
+		font-size s-font-size
+		font-weight 400
+		line-height 32px
+		text-decoration underline
+		&:hover
+			color #278FC5

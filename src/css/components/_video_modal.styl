@@ -1,0 +1,27 @@
+/*
+*	Video Modal
+*/
+.video-modal
+	fixed 0 0 0 0
+	z-index 9999
+	display none
+	height 100vh
+	width 100%
+	.modal-background
+		absolute 0 0 0 0
+		background-color: rgba(0,0,0,.5);
+	.modal-body
+		display table-cell
+		vertical-align middle
+		text-align center
+	.video
+		display inline-block
+		position relative
+		z-index 1
+		top 100px
+		opacity 0
+		+below(7)
+			width 100%
+	iframe
+		+below(7)
+			width 100%

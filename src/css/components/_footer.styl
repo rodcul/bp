@@ -1,0 +1,154 @@
+// footer component
+
+.footer
+	size 100%
+
+.footer--main
+	size 100%
+	background: colors.footer-background
+	padding-top 69px
+	text-align center
+
+.footer__sitemap
+	size 100% auto
+	max-width 1280px
+	margin 0 auto
+.footer--logo
+	padding 39px 0
+	text-align center;
+
+.footer__copyright
+	border-top: 1px solid colors.footer-border
+	position relative
+	size 100% auto
+	padding 28px 0 23px
+
+	&:before
+		content ' '
+		absolute -6px 0 0 0
+		size 69px 11px
+		background: colors.copyright-monolith
+		margin 0 auto
+
+.footer__copyright-inner
+	display table
+	size auto
+	margin 0 auto
+
+.footer__copyright-text
+	color: colors.copyright-color
+	font-family 'Arial', sans-serif
+	font-size: fontSizes.copyright
+	text-align center
+	line-height 21px
+
+	+below(8)
+		width 96%
+		text-align center
+		margin-left 0
+		padding 0 2%
+.footer__copyright-text-text
+	+below(8)
+		display block
+		text-align center
+.footer__copyright-anchor
+	color: colors.copyright-anchor
+	text-decoration underline
+
+	&:hover
+		color: colors.copyright-anchor-hover
+
+.footer__social
+	display inline-block
+	padding-left 17px
+	position relative
+	top 8px
+	+below(8)
+		display block
+		text-align center
+		top 15px
+.footer__social-item
+	float left
+	margin-right 10px
+	svg
+		fill #aeaeae
+	a
+		display inline-block
+		margin-right 10px
+	a:hover svg
+		fill #40a8de
+	&:last-child
+		margin-right 0
+		margin-top 15px
+		+below(6)
+			margin-top 15px
+	+below(8)
+		float none
+		display inline-block
+// sitemap section
+.show-sm
+	display none
+	+below(8)
+		display block
+.sitemaps
+	cf()
+	max-width 980px
+	margin 0 auto
+	padding 0 30px
+	border-bottom: 1px solid colors.footer-border
+
+	+below(8)
+		padding-bottom 0
+
+.sitemap
+	column(2.4/bp-max-columns, gutter: 3.1)
+	padding-bottom 47px
+
+	+below(8)
+		width 33.33%
+		text-align left
+		margin-right 0
+		min-height 200px
+	+below(6)
+		width 100%
+		text-align center
+		min-height auto
+		padding-bottom 42px
+		.header
+			.title--sitemap
+				text-align center
+				+below(8)
+					text-align left
+				+below(6)
+					text-align center
+
+		.nav--sitemap
+			.nav__item--sitemap
+				text-align center
+				+below(8)
+					text-align left
+				+below(6)
+					text-align center
+
+.container--footer
+	+below(8)
+		border-bottom 1px solid #c7c7c7
+
+.mobile-only
+	display none
+
+	+below(8)
+		width 100%
+		text-align center
+		margin-top 15px
+		padding-left 0
+
+	.footer__social-item
+		float none
+		display inline-block
+
+.desktop-only
+	display block
+
+	+below(8)
+		display none

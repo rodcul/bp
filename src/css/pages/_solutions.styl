@@ -1,0 +1,547 @@
+// Solutions Page
+
+
+// solutions components
+
+// solutions section on home
+
+.solutions
+	cf()
+	padding 0 45px
+	+above(11)
+		padding 0
+	+below(4)
+		padding 0 15px
+
+// solution component
+
+.solution
+	display block
+
+.solution--home
+	col(1/4, uncycle: 2, cycle:4)
+	text-align center !important
+	background-position center top
+	background-repeat no-repeat
+	.solution--home__image-container
+		text-align center
+		size 100% 127px
+		+below(6)
+			height auto
+		+below(11)
+			height 120px
+	svg
+		width 102px
+		height 80px
+		display inline-block
+		margin-bottom 20px
+
+	+below(11)
+		col(1/2, uncycle: 2, cycle:2)
+		margin-bottom 30px
+		padding 0 6%
+	+below(6)
+		col(1/1)
+.new-solution--component
+	cf()
+	.solution-component--items
+		width 33.33%
+		float left
+		text-align center
+		padding 0 55px
+		svg
+			width 210px
+			height auto
+		+below(12)
+			padding 0 30px
+		+below(11)
+			padding 0 22px
+		+below(10)
+			width 100%
+			padding 0 50px
+		+below(8)
+			padding 0 20px
+		+below(7)
+			float none
+			width 420px
+			margin 0 auto 25px
+			padding 0
+		+below(6)
+			width 210px
+			margin 25px auto
+		&:nth-child(1)
+			.st0
+				display none
+			.st1
+				display inline
+			.st2
+				fill #34A5DD
+			.st3
+				fill:#036097
+			.st4
+				fill #B1DBF5
+			.st5
+				fill #64BDEA
+		&:nth-child(2)
+			+below(10)
+				position relative
+				top -10px
+			+below(7)
+				top 0
+			.st0
+				fill #34A5DD
+			.st1
+				fill #036097
+			.st2
+				fill:#B1DBF5
+			.st3
+				fill:#64BDEA
+			.st4
+				display:none
+			.st5
+				display:inline
+		&:nth-child(3)
+			+below(10)
+				position relative
+				top -20px
+			+below(7)
+				top 0
+			.st0
+				display none
+			.st1
+				display inline
+			.st2
+				fill #34A5DD
+			.st3
+				fill #036097
+			.st4
+				fill #B1DBF5
+			.st5
+				fill #64BDEA
+		.solution--home__image-container
+			padding 0
+			margin-top 15px
+			display inline-block
+			+below(10)
+				margin-top 10px
+				display block
+				float left
+				height auto
+				padding 0
+				width 210px
+			+below(7)
+				float none
+				margin 0 auto
+		.title--solution
+			margin -15px 0 8px 0
+			+below(12)
+				margin -15px 0 10px 0
+			+below(10)
+				float left
+				font-size 18px
+				margin-top 58px
+				padding-left 5px
+				margin-bottom 20px
+				text-align left
+			+below(8)
+				width 55%
+			+below(7)
+				float none
+				width 100%
+				margin-top 0
+				text-align center
+			+below(6)
+				margin-top -10px
+				padding-left 0
+				font-size 18px
+				line-height 24px
+				margin-bottom 9px
+		.solution__desc
+			+below(10)
+				float left
+				text-align left
+				width 50%
+				padding-left 5px
+				line-height 20px
+				margin-bottom 10px
+			+below(8)
+				width 55%
+			+below(7)
+				float none
+				width 100%
+				text-align center
+			+below(6)
+				line-height 24px
+				margin-bottom 9px
+		.solution__learn
+			+below(10)
+				float left
+				text-align left
+				width 50%
+				padding-left 5px
+			+below(8)
+				width 55%
+			+below(7)
+				float none
+				width 100%
+				text-align center
+.home-section--solutions
+	.container
+		+below(13)
+			max-width 990px
+		+below(11)
+			max-width 940px
+		.header--solutions
+			+below(12)
+				margin-bottom 0
+			+below(6)
+				margin-bottom 0
+			.title--home-subtitle
+				+below(6)
+					color #878787
+					font-size 18px
+					font-weight 400
+					line-height 23px
+					margin 0
+					padding 0 20px
+					text-align center
+					width 100%
+.solution__desc
+	margin-bottom 15px
+	color: colors.solution-description-color
+	font-weight 400
+	line-height 19px
+	margin-top -3px
+	+above(11)
+		font-size: fontSizes.solution-description
+		margin-top 0
+		margin-bottom 13px
+		line-height 24px
+
+.solution__anchor
+	position relative
+	color: colors.solution-anchor
+	font-weight 700
+	text-transform uppercase
+	+below(6)
+		margin-right 0
+	+above(11)
+		font-size: fontSizes.solution-anchor
+
+	&:after
+		absolute 1px -20px false false
+		font-size: fontSizes.solution-anchor-after
+		font-weight bold
+
+	&:hover
+		color: colors.solution-anchor-hover
+
+	&:active
+		color: colors.solution-anchor-active
+
+.solutions-container
+	padding 0 20px
+	+below(11)
+		padding 0 40px
+	+below(4)
+		padding 0 30px
+// solutions main text
+.solutions-main-text
+	padding 56px 15px 62px
+	+below(4)
+		padding 31px 15px 34px
+	h1
+		font-size 38px
+		max-width 600px
+		color #505050
+		margin 0 auto
+		text-align center
+		font-weight 300
+		+below(11)
+			font-size 32px
+			line-height 38px
+		+below(6)
+			font-size 32px
+			line-height 38px
+		+below(4)
+			font-size 18px
+			line-height 26px
+
+// solutions solution
+.solutions-solution
+	color bp-l-gray
+	padding 73px 0px 70px
+	border-top 1px solid #c7c7c7
+	+below(4)
+		padding 40px 0 125px
+	.solutions-solution__content
+		span(1/2)
+		font-size 16px
+		line-height 27px
+		+below(8)
+			span(1/1)
+	.solution-red-dot, .solution-green-dot
+		display inline-block
+		size 10px 10px
+		margin-right 10px
+	.solution-red-dot
+		background-color bp-red
+	.solution-green-dot
+		background-color bp-d-green
+.solutions-solution:nth-child(odd)
+	background-color #f5f5f5
+
+// Solution Header
+.solutions-solution__header
+	margin-bottom 27px
+	+below(5)
+		margin-bottom 18px
+.solution__title
+	font-size 32px
+	margin 25px 0 12px
+	+below(12)
+		font-size 30px
+		line-height 36px
+	+below(11)
+		font-size 30px
+		line-height 36px
+	+below(8)
+		font-size 24px
+		line-height 30px
+	+below(5)
+		font-size 24px
+		letter-spacing 0
+		line-height 31px
+		margin-top 11px
+		margin-bottom 9px
+.solution__subtitle
+	font-size 25px
+	margin 0
+	font-weight 400
+	line-height	1
+.solutions-solution__strip-line
+	size 49px 11px
+	background-color #40a8de;
+	+below(4)
+		width 39px
+		height 10px
+
+.solutions-solution:nth-child(odd) .solutions-solution__strip-line
+	background-color #f3a027
+
+.solutions-solution:nth-child(4n) .solutions-solution__strip-line
+	background-color #0f2942;
+
+//solution content
+.solutions-solution__challenge, .solutions-solution__solution
+	margin-bottom 20px
+	+below(5)
+		margin-bottom 25px
+.solutions-solution__help ul
+	margin-top 10px
+	li
+		position relative
+		padding-left 25px
+		margin-bottom 3px
+		+below(8)
+			font-size 14px
+			line-height 22px
+			margin-bottom 0
+			padding-left 20px
+	li:before
+		content ''
+		display inline-block
+		size 10px 10px
+		margin-right 10px
+		position absolute
+		left 0
+		top 10px
+		background-color bp-xs-blue
+		+below(8)
+			top 5px
+			
+.solutions-solution__learnmore
+	margin 38px 0 0
+	+below(7)
+		text-align left
+	.button
+		display inline-block
+		border 2px solid #c7c7c7
+		text-transform uppercase
+		padding 10px 0
+		text-align center
+		color #40a8de
+		font-weight bold
+		size 144px 47px
+		background-color white
+		&:hover, &:active, &:focus
+			color #68bfec
+		+below(12)
+			font-size 16px
+			height auto
+		+below(11)
+			font-size 14px
+			height auto
+		+below(8)
+			font-size 14px
+			height auto
+		+below(5)
+			width 140px
+
+//solution Image
+.solutions-solution__image
+	span(1/2)
+	text-align center
+	float right
+	overflow hidden
+	padding 30px 50px 0
+	+below(8)
+		span(1/1)
+		float none
+		margin-bottom 40px
+		padding 0 20%
+	+below(5)
+		padding 0 3px
+		margin-bottom 35px
+	.solutions-solution__svg
+		opacity 0
+	img
+		display inline-block
+		height auto
+		max-width 100%
+
+//solutions walk-through
+.solutions--walk-through
+	border-top none
+	background-image: url('./../img/walk-through.png'),
+		linear-gradient(180deg, #0F2942 0%, #0F2942 93%, colors.walk-through-background 93%, colors.walk-through-background 100%)
+	padding-top 72px
+	&:before
+		top 0
+		background-color bp-xs-blue
+	.header--walk-through
+		padding 0 15px
+	.title--home
+		color white
+	.title--home-subtitle
+		color white
+	.button--request-demo
+		background bp-d-green
+		border-color bp-d-green
+		color white
+		&:hover, &:active
+			background: bp-s-green
+			border-color: bp-s-green
+
+	+below(10)
+		background-image: url(''),
+			linear-gradient(180deg, #0F2942 0%, #0F2942 93%, colors.walk-through-background 93%, colors.walk-through-background 100%)
+		size 100% 675px
+		.container
+			background-size:80%
+
+	+below(8)
+		size 100% 575px
+
+	+below(5)
+		size 100% 575px
+		background-image: url(''),
+			linear-gradient(180deg, #0F2942 0%, #0F2942 98%, colors.walk-through-background 98%, colors.walk-through-background 100%)
+		.container
+			background-size:90%
+
+//Solution Image Animation
+@keyframes solutionImageAnimation {
+  0% {
+  	left: 100px;
+    opacity: 0;
+  }
+  100% {
+  	left: 0;
+    opacity: 1;
+  }
+}
+.solutionImageAnimation
+	position relative
+	animation solutionImageAnimation 3s ease forwards
+
+//=====================================================
+//	SUB SOLUTIONS
+//=====================================================
+.sub--solutions--sections
+	border-bottom 1px solid #dddddd
+.sub-solution-sub-section
+	color #505050
+	padding 70px 0 120px
+	.sub-solution-sub-section__image, .sub-solution-sub-section__content
+		span(1/2)
+		padding 0
+		+below(12)
+			padding 0 50px
+		+below(8)
+			width 100%
+			float none
+		+below(5)
+			padding 0 30px
+	.sub-solution-sub-section__strip-line
+		width 49px
+		height 11px
+		+below(5)
+			width 39px
+			height 9px
+	.sub-solution-sub-section__image
+		float right
+		text-align center
+		overflow hidden
+		padding 30px 50px 0
+		img
+			display inline-block
+			position relative
+			opacity 0
+		+below(8)
+			float none
+			margin-bottom 40px
+			padding 0 20%
+		+below(5)
+			padding 0 30px
+	.sub-solution-sub-section__title
+		color #505050
+		font-size 32px
+		font-weight 600
+		line-height 38px
+		margin-top 21px
+		+below(4)
+			font-size 24px
+			line-height 33px
+			margin-top 10px
+	.sub-solution-sub-section__content
+		color #505050
+		font-size 16px
+		font-weight 400
+		line-height 27px
+		+below(4)
+			font-size 14px
+		p
+			margin-bottom 10px
+	.sub-solution-sub-section
+		padding-top 70px
+		padding-bottom 55px
+	.sub-solution-sub-section__header
+		margin-bottom 25px
+		+below(5)
+			margin-bottom 6px
+.solution-tab-1
+	display block
+.sub-solution-sub-section .sub-solution-sub-section__strip-line
+	background-color #40a8de
+.sub-solution-sub-section:nth-child(even)
+	background-color white
+.sub-solution-sub-section:nth-child(2n) .sub-solution-sub-section__strip-line
+	background-color #fbb116
+.sub-solution-sub-section:nth-child(3n) .sub-solution-sub-section__strip-line
+	background-color #f0453b
+
+
+
+
+

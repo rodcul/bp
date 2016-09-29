@@ -1,0 +1,97 @@
+.share-section
+	background-color:#f5f5f5
+	padding:20px 0
+	.container
+		width:740px
+		margin:0 auto
+		cf()
+		+below(9)
+			width:80%
+			margin-left:10%
+			margin-right:10%
+		.left-section
+			float:left
+			width:240px
+			+below(9)
+				float:none
+				width:100%
+				margin-bottom:20px
+				text-align:center
+			label
+				font-size:s-font-size
+				font-weight:600
+				color:bp-m-gray
+				text-transform:uppercase
+				position:relative
+				top: -9px
+			.linkedin-icon
+				size 28px 28px
+				display inline-block
+				background-image: url('../img/sprites.png');
+				background-position 28px 0
+		.right-section
+			float:left
+			width:500px
+			+below(9)
+				float:none
+				width:100%
+				text-align:center
+			.subscribe-form
+				float:right
+				+below(9)
+					float:none
+					display:inline-block
+				input[type="email"]
+					background-color:bp-white
+					border:1px solid #d4d4d4
+					padding:3px 18px
+					font-size:13px
+					line-height:32px
+					color:#878787
+					float:left
+					+below(4)
+						width:65%
+				input[type="submit"]
+					background-color:bp-red
+					color:bp-white
+					font-size:13px
+					font-weight:700
+					padding:3px 18px
+					line-height:32px
+					border:1px solid bp-red
+					float:left
+					+below(4)
+						width:35%
+.share-section
+	.mashsb-box .mashsb-buttons a
+		min-width 0
+		background-color transparent
+		background-image: url('../img/sprites.png');
+		border-radius 50%
+		margin 5px 5px 0
+		size 28px 28px
+		&.mashicon-twitter
+			background-position -42px 0
+	.mashsb-box .mashsb-buttons a .text
+		display none
+	.mashicon-share:before, [class*=" mashicon-"] .icon:before, [class^=mashicon-] .icon:before
+		margin 0
+		color #aeaeae
+		display none
+	.mashsb-count
+		color #878787
+	.mashsb-main
+		display inline-block
+		padding-top 0
+		padding-bottom 0
+		+below(9)
+			text-align center
+	.mashsb-count, .mashsb-buttons
+		+below(9)
+			float: none !important
+			display inline-block
+
+
+
+
+

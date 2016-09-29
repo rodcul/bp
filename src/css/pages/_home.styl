@@ -1,0 +1,400 @@
+// home page
+
+// home page section component
+
+.home-section
+	padding 70px 0 120px
+
+.home-section--solutions
+	padding 116px 15px 120px
+	background: colors.home-section-solutions
+	+below(11)
+		padding 45px 15px 120px
+		.solutions.solutions--home
+			max-width 740px
+			margin 0 auto
+			.solution--alert-correlation:nth-child(1)
+				padding 0 70px 0 0
+				margin-right 0
+				margin-bottom 80px
+				.title--solution
+					margin-bottom 10px
+			.solution--alert-correlation:nth-child(2)
+				padding 0 0 0 70px
+				margin-bottom 80px
+				.title--solution
+					margin-bottom 10px
+				+below(6)
+					padding-left 0
+			.solution--alert-correlation:nth-child(3)
+				padding 0 70px 0 0
+				margin-right 0
+				margin-bottom 80px
+				.title--solution
+					margin-bottom 10px
+				+below(6)
+					padding-right 0
+			.solution--alert-correlation:nth-child(4)
+				padding 0 0 0 70px
+				.title--solution
+					margin-bottom 10px
+				+below(6)
+					padding-left 0
+					margin-bottom 80px
+	+below(6)
+		padding 45px 15px 20px
+		.solutions.solutions--home
+			width 100%
+			.solution--alert-correlation:nth-child(1)
+				padding-right 0
+			.solution--alert-correlation:nth-child(2)
+				padding-left 0
+			.solution--alert-correlation:nth-child(3)
+				padding-right 0
+			.solution--alert-correlation:nth-child(4)
+				padding-left 0
+
+.home-section--alert-correlation
+	display none
+	position relative
+	size 100% auto
+	padding-top 116px
+	padding-left 15px
+	padding-right 15px
+	background: colors.home-section-alert-correlation
+	border-top: 1px solid colors.home-section-alert-correlation-border
+
+	&:before
+		content ' '
+		absolute 70px 0 0 0
+		size 69px 11px
+		background: colors.home-section-alert-correlation-monolith
+		margin 0 auto
+
+	+above(7)
+		display block
+
+.home-section--testimonials
+	padding 110px 0 118px 0
+	position relative
+	size 100% auto
+	background-color: colors.home-section-testimonials
+	+above(11)
+		padding 110px 0 118px 0
+		background: colors.home-section-testimonials
+		border: 1px solid colors.home-section-testimonials-border
+	+below(8)
+		padding 110px 0 0 0
+	&:before
+		content ' '
+		absolute 70px 0 0 0
+		size 69px 11px
+		background: colors.home-section-testimonials-monolith
+		margin 0 auto
+	.custumer-success__section
+		+below(8)
+			margin-bottom 80px
+		.custumer-success__box
+			padding 0 10px
+			.custumer-success__testimony
+				height 95px
+				overflow visible
+				padding 0 15px
+			+below(8)
+				float none
+				margin 0 auto 30px
+				padding 0
+				width 500px
+				.custumer-success__image
+					width 115px
+					display inline-block
+					float left
+				.custumer-success__testimony
+					margin-left 25px
+					width 350px
+					display inline-block
+					padding-left 0
+					float none
+					text-align left
+					height auto
+					margin-bottom 10px
+				.custumer-success__author
+					margin-left 25px
+					width 350px
+					display inline-block
+					padding-left 0
+					float none
+					text-align left
+					line-height 21px
+					margin-top 0
+				.custumer-success__role
+					margin-left 25px
+					width 350px
+					display inline-block
+					padding-left 0
+					float none
+					text-align left
+					line-height 21px
+					margin-top 0
+			+below(6)
+				width 100%
+				.custumer-success__image
+					width 100%
+				.custumer-success__testimony
+					margin-left 0
+					width 96%
+					padding 0 2%
+					text-align center
+					margin-bottom 15px
+				.custumer-success__author
+					width 96%
+					padding 0 2%
+					margin-left 0
+					margin-right 0
+					text-align center
+				.custumer-success__role
+					width 96%
+					padding 0 2%
+					margin-left 0
+					margin-right 0
+					text-align center
+			+below(4)
+				width 100%
+				.custumer-success__testimony
+					padding 0 45px
+				.custumer-success__author
+					padding 0 45px
+				.custumer-success__role
+					padding 0 45px
+// integrations section
+
+.home-section--integrations
+	padding 42px 15px 50px 15px
+	background: colors.integrations-background
+	+above(11)
+		padding 137px 15px 120px
+	.integration.selected >span
+		background-color #fbb116
+
+.integrations__call-for-action
+	size 100% auto
+	text-align center
+
+// learn more section
+
+.home-section--learn-more
+	padding 116px 0 120px 0
+	+below(10)
+		.home-article__anchor
+			bottom 0
+	+below(5)
+		padding-top 40px
+		padding-bottom 50px
+
+	.container
+		+below(12)
+			margin 0 5%
+			width 90%
+		+below(11)
+			margin 0
+			width 100%
+			padding 0
+		+below(7)
+			padding 0 30px
+
+.learn-more__articles
+	cf()
+
+	+below(11)
+		padding-left 45px
+		padding-right 45px
+	+below(5)
+		padding-left 0
+		padding-right 0
+
+.home-article
+	col(4/bp-max-columns, gutter: 2.4)
+	transition all 0.1s linear 0.0s
+	position relative
+	
+	&:hover
+		box-shadow 1px 1px 3px 1px rgba(0, 0, 0, 0.15)
+
+	+below(10)
+		border: 1px solid colors.learn-more-article-border
+		width 568px
+		margin 0 auto 25px auto
+		float none
+		&:last-child
+			margin 0 auto 25px auto
+	+below(7)
+		width 100%
+	+below(6)
+		width 300px
+	+below(4)
+		width 244px
+.home-article__image-container
+	border 1px solid #ddd
+	background-size cover
+	background-position center
+	background-repeat no-repeat
+	+below(10)
+		size 50% auto
+		overflow:hidden
+		float:left
+	+below(7)
+		size 100% auto
+	+above(11)
+		width 100%
+
+.home-article__image
+	size 100% auto
+
+	+above(11)
+		size 100%
+
+.home-article__content
+	padding 19px 40px 24px
+	border: none
+	text-align center
+	position relative
+	border-left 1px solid #ddd
+	border-right 1px solid #ddd
+	border-bottom 1px solid #ddd
+	+below(11)
+		width:50%
+		float:left
+		text-align center
+		padding:30px 25px 10px
+	+below(10)
+		border none
+	+below(7)
+		width 100%
+		border none
+		text-align center
+	+above(11)
+		size 100% auto
+		text-align center
+	+above(13)
+		width 100%
+		min-height 160px
+	
+
+.home-article__description
+	margin-bottom 0
+	color: colors.home-article-description
+	font-size: fontSizes.home-article-description
+	font-weight 400
+	line-height 24px
+	height 80px
+	+below(11)
+		height 95px
+	+below(10)
+		height auto
+		font-size:xs-font-size
+		line-height:20px
+	+below(7)
+		min-height 95px
+	+below(4)
+		min-height 65px
+
+.home-article__anchor
+	position relative
+	color: colors.home-article-anchor
+	font-size: fontSizes.home-article-anchor
+	font-weight 700
+	text-transform uppercase
+	bottom 0
+	text-align center
+	display inline-block
+	bottom 15px
+	+below(10)
+		bottom 0
+	+below(4)
+		bottom 0
+	&:after
+	span
+		font-size:16px
+	&:hover
+		color: colors.home-article-anchor-hover
+		border-bottom: 1px solid colors.home-article-anchor-hover
+		
+	&:active
+		color: colors.home-article-anchor-active
+		border-color: colors.home-article-anchor-active
+				
+.home-article__anchor___overlay
+	position absolute
+	display block
+	width 100%
+	height 100%
+	top 0
+	left 0
+	
+// walk through section
+
+.walk-through
+	position relative
+	size 100% 726px
+	background-image: url('./../img/walk-through.png'),
+		linear-gradient(180deg, white 0%, white 77%, colors.walk-through-background 77%, colors.walk-through-background 100%)
+	background-repeat no-repeat
+	background-position center bottom
+	padding-top 74px
+	border-top: 1px solid colors.walk-through-border
+
+	.container
+		background-image: url('./../img/walk-through.png')
+		background-repeat:no-repeat
+		background-position:center bottom
+
+	+below(10)
+		background-image: url(''),
+		linear-gradient(180deg, white 0%, white 85%, colors.walk-through-background 80%, colors.walk-through-background 100%)
+		size 100% 675px
+
+		.container
+			background-size:80%
+
+	+below(8)
+		size 100% 575px
+
+	+below(5)
+		size 100% 575px
+		background-image: url(''),
+		linear-gradient(180deg, white 0%, white 90%, colors.walk-through-background 90%, colors.walk-through-background 100%)
+		
+		h4.title
+			padding 0 40px
+
+	&:before
+		content ' '
+		absolute -6px 0 0 0
+		size 69px 11px
+		background: colors.walk-through-monolith
+		margin 0 auto
+
+.walk-through__call-for-action
+	cf()
+	text-align center
+
+	+below(5)
+		.button--walk-through
+			font-size xxs-font-size
+			display:block
+			margin:0 auto
+			width:45%
+			line-height:38px
+			padding-left:10px
+			padding-right:10px
+
+.walk-through__separator
+	padding 0 9px
+	color: colors.walk-through-separator
+	font-size: fontSizes.walk-through-separator
+	font-weight 400
+	line-height 55px
+
+.box-shadow
+	background alpha(#000, 0.5)
+	absolute 0 0 0 0

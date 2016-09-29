@@ -1,0 +1,103 @@
+// nav component
+
+.nav
+	display block
+	size 100%
+
+.nav__item
+	display block
+
+// integrations nav
+
+.nav--integrations
+	display block
+	size 100% auto
+	text-align center
+
+.nav__list--integrations
+	cf()
+	+below(5)
+		display none
+.nav__list--integrations--mobile--cover
+	text-align center
+.nav__list--integrations--mobile
+	display none
+	height 32px
+	background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCAYAAADgkQYQAAAAVUlEQVQYV2NkIAIwEqGGgfHPJtGE/wwM8bgUMzIwLASb9Guj6AJGRkYMhf///1/I5v86AW4dukKYApAhKG6CKURWgKEIJAByI4vf6wXIbiTOd8QEAQDIYCAtyZ0HMgAAAABJRU5ErkJggg==");
+	background-repeat no-repeat
+	background-color transparent
+	background-position center right 10px
+	-webkit-appearance none
+	-moz-appearance none
+	appearance none
+	cursor pointer
+	width 100%
+	border none
+	padding 0
+	text-align left
+	font-weight 800
+	font-size 14px
+	color #fbb116
+	text-transform uppercase
+	border-radius 0
+	border-bottom 1px solid #3f5468
+	+below(5)
+		display inline-block
+.page--integrations .nav__list--integrations--mobile
+	color #68bfec
+	background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCAYAAADgkQYQAAAAT0lEQVQYV2NkIAIwEqGGgTFj/5sEBkaGeJyK/zMsBJuUsf/NAqwK/zMsnOEokgC3DkMhVAHIEBQ3wRUiKcBQBLU6YYajyAJkNxLnO2KCAABUvBp9bbVyiAAAAABJRU5ErkJggg==");
+.nav__item--integrations
+	display inline-block
+	margin-right 10px
+	text-align center
+	line-height 47px
+	transition all 0.2s linear 0.0s
+
+	&:last-child
+		margin-right 0
+
+.nav__anchor--integrations
+	display block
+	padding 0 12px
+	color: colors.integrations-anchor
+	border-bottom: 6px solid colors.integrations-nav-border
+	font-size: fontSizes.integrations-anchor
+	font-weight 600
+	text-transform uppercase
+
+	&:hover
+		color: colors.integrations-anchor-hover
+		border-color: colors.integrations-anchor-hover
+
+.nav__anchor--integrations-active
+	color: colors.integrations-anchor-active
+	border-color: colors.integrations-anchor-active
+	cursor default
+	font-weight: 700
+	&:hover
+		color: colors.integrations-anchor-active
+		border-color: colors.integrations-anchor-active
+// sitemap section's nav item
+
+.nav__item--sitemap
+	text-align left
+	margin-bottom 1px
+	
+	+below(6)
+		margin-bottom 10px
+
+	&:last-child
+		margin-bottom 0
+
+.nav__anchor--sitemap
+	color: colors.sitemap-anchor-color
+	font-size: fontSizes.sitemap-anchor
+
+	&:hover
+		color: colors.sitemap-anchor-hover
+		border-bottom: 1px solid colors.sitemap-anchor-hover
+
+.nav__label
+	color: colors.sitemap-label
+	font-size: fontSizes.sitemap-label
+	font-weight 700

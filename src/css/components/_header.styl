@@ -1,0 +1,289 @@
+// header component
+
+.header
+	size 100% auto
+	&.original
+		opacity 1
+		position absolute
+		top 0
+		width 100%
+		z-index 99999
+		border-bottom 1px solid #505050
+		.logo
+			width 200px
+			.logo__head
+				background-repeat no-repeat
+				background-size 186px 40px
+				height 50px
+				margin 16px 0 18px 0px
+				width 188px
+		.menu
+			margin-top 13px
+			margin-left 20px
+			+below(1100px)
+				margin-left 0
+			.menu__item
+				margin 0 10px
+				+below(1100px)
+					margin 0 5px
+				a
+					font-weight 400
+					padding 0 6px
+					color #c7c7c7
+					font-size 13px
+					&:hover
+						color #fff
+					svg
+						transition all 0.2s linear 0s
+					&:hover
+						svg
+							fill #ffffff
+				&.current_page
+					.menu__anchor
+						padding 0 10px 8px
+						font-weight 700
+						color #fff
+						svg
+							fill #fff
+		.submenu.submenu--resources
+			top 84px
+			right auto
+			&:after
+				left 718px
+			&.on-active-state
+				&:after
+					left 723px
+			&.push-right
+				&:after
+					left 729px
+			&.push-right-double
+				&:after
+					left 732px
+		.submenu--product
+			top 71px
+			&:after
+				left 111px
+			&.on-active-state
+				&:after
+					left 116px
+			&.push-right-double
+				&:after
+					left 125px
+		.submenu--why
+			top 71px
+			&:after
+				left 90px
+			&.on-active-state
+				&:after
+					left 96px
+		.extra
+			float right
+			margin-top 12px
+			margin-right 10px
+			+below(1200px)
+				margin-right 0
+			.extra__trial
+				a
+					border 1px solid #fff
+					color #fff
+					padding 8px 17px
+			.extra__nav
+				margin-right 17px
+				margin-top 19px
+				padding 0
+				display inline-block
+				span
+					color #6a6f76
+		.subnav.subnav--container
+			background-color rgba(255, 255, 255, 0.05)
+			margin 0
+			+below(1200px)
+				padding 0
+		+below(1024px)
+			opacity 0
+			z-index 99
+		+below(6)
+			display none
+		.container
+			position relative
+			+below(1200px)
+				padding 0 30px
+.header--main
+	fixed 0 false false 0
+	size 100% auto
+	background none
+	color: colors.header-color
+	background #0F2942
+	transition none
+	opacity 0
+	+below(1024px)
+		padding 0 !important
+		opacity 1 !important
+		top 0 !important
+	+below(10)
+		padding 0
+	+below(1024px)
+		fixed 0 false false 0
+		opacity 1!important
+		padding 0 20px
+		background: colors.header-fixed-background
+		border-bottom 1px solid #505050
+		top 0 !important
+	.container--menu
+		+below(1024px)
+			padding 0 30px
+		+below(850px)
+			padding 0 15px
+	.extra__nav
+		display none
+	.subnav.subnav--container
+		margin 0
+	.menu
+		.menu__item
+			&.current_page
+				.menu__anchor
+					+below(11)
+						padding 0 10px 18px
+.header__mobile-nav
+	display none
+	+below(9)
+		cf()
+		size 23px 19px
+		float left
+		margin 16px 12px 16px 0
+
+.header--fixed
+	.header--main
+		fixed 0 false false 0
+		size 100% auto
+		z-index 9999
+		background: colors.header-fixed-background
+		max-height 56px
+		+below(1023px)
+			opacity 1 !important
+		.menu__item.current_page
+			.menu__anchor
+				padding 0 10px 20px
+		.subnav.subnav--container
+			position relative
+			top -1px
+	.button--mobile-menu
+		margin 20px 20px 0 0
+		+below(1025px)
+			margin: 14px 11px 0 0
+	.logo__head
+		size 140px 31px
+		background-size 140px 31px
+		margin 12px 0
+		+below(1025px)
+			background-size 100%
+			margin 15px 0
+			size 112px 24px
+		/*+below(420px)
+			margin 14px 0*/
+	.menu__nav
+		margin 18px 0 0 0
+	.extra
+		margin-top 0
+		float right
+		+below(12)
+			width 215px
+		+below(10)
+			width auto
+		+below(7)
+			width auto
+	.extra__trial
+		padding 13px 0
+		text-align right
+		/*+below(9)
+			padding: 10px 0*/
+	.submenu--why
+		absolute 66px false false -30px
+	.submenu--resources
+		 absolute 66px false false false
+	.submenu--product
+		absolute 66px false false 70px
+.header--fixed
+	.header--main
+		+above(1025px)
+			.container--menu
+				padding 0 30px
+		+above(1280px)
+			.container--menu
+				padding 0
+
+// alert-correlation section's header on home page
+.header--alert-correlation
+	margin-bottom 43px
+
+// solutions section's header on home page
+.header--solutions
+	margin-bottom 35px
+	padding 0 43px
+	+above(11)
+		padding 0
+		margin-bottom 46px
+	+below(11)
+		margin-bottom 61px
+	+below(6)
+		padding 0
+		.title--home-subtitle
+			width: 202px;
+			padding: 0;
+			margin: 0 auto;
+
+// testimonials section's header on home page
+.header--testimonials
+	margin-bottom 29px
+
+	+above(11)
+		margin-bottom 108px
+
+// integrations section's header on home page
+.header--integrations
+	cf()
+	margin-bottom 44px
+
+// lear-more section's header on home
+.header--learn-more
+	margin-bottom 99px
+	+below(5)
+		margin-bottom:40px
+
+// walk-through section's header on home
+.header--walk-through
+	margin-bottom 48px
+
+// sitemap setion's header on footer
+.header--sitemap
+	margin-bottom 8px
+	+below(6)
+		margin-bottom 4px
+
+.header--fixed
+	.header
+		&.original
+			.current_page
+				font-color #fff
+				font-weight 700
+				svg
+					fill #fff
+			.menu__anchor
+				&:hover
+					svg
+						fill #fff
+				svg
+					fill #c7c7c7
+		&.header--main
+			.current_page
+				.menu__anchor
+					font-color #fff
+					font-weight 700
+					svg
+						fill #fff
+			.menu__anchor
+				&:hover
+					svg
+						fill #fff
+				svg
+					fill #878787

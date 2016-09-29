@@ -1,0 +1,34 @@
+// Case Study
+
+// sub case-study carousel component
+.carousel--sub_case-study
+	size 100% 500px
+	+below(17)
+		height:450px
+	+below(12)
+		height:350px
+	+below(8)
+		height:230px
+	.carousel__content
+		top 190px
+		+below(17)
+			top 170px
+		+below(12)
+			top 120px
+		+below(9)
+			top 50px
+		+below(8)
+			top 40px
+		+below(5)
+			padding 15px 40px
+	.title--hero
+		margin 0 0 8px
+	.title--hero-subtitle
+		max-width 550px
+		margin 0 auto 40px
+		+below(11)
+			margin 0 auto 21px
+	.carousel__slide
+		background-size	cover
+	.carousel__line:before
+		background-color #e95c25

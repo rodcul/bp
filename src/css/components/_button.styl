@@ -1,0 +1,213 @@
+// button component
+
+.button
+	border-radius 3px
+
+// button presented on mobile
+
+mobile-button-width = 1.5rem
+mobile-button-transition = .2s
+
+.button--mobile-menu
+	display none
+	float left
+	background none
+	border none
+	margin 12px 20px 0 0
+	border-radius 0
+	padding-bottom 3px
+	transition mobile-button-transition
+	cursor pointer
+
+	&:active
+		transition 0
+
+	+below(1024px)
+		display inline-block
+
+.button__lines
+	line(white, mobile-button-width, mobile-button-transition)
+	position relative
+	transition background mobile-button-transition mobile-button-transition ease
+
+	&:before, &:after
+		line(white, mobile-button-width, mobile-button-transition)
+		absolute false false false 0
+		content ""
+		transform-origin 50% 50%
+		transition top mobile-button-transition mobile-button-transition ease, transform mobile-button-transition ease
+
+	&:before
+		top 8px
+
+	&:after
+		top -8px
+
+.button--mobile-menu-active
+	.button__lines
+		transition background mobile-button-transition 0s ease
+		background transparent
+		border-radius 1
+
+		&:before, &:after
+			size mobile-button-width false
+			border-radius 20px
+			transition top mobile-button-transition ease, transform mobile-button-transition mobile-button-transition ease
+			top 0
+
+		&:before
+			transform rotate3d(0, 0, 1, 45deg)
+
+		&:after
+			transform rotate3d(0, 0, 1, -45deg)
+
+// button on extra navigation
+
+.button-extra-nav
+	display block
+	background transparent
+	padding 6px 16px 6px 20px
+	border: 1px solid colors.button-extra-border
+	font-size: fontSizes.extra-lg-button
+	line-height 17px
+	font-weight 700
+	text-transform uppercase
+	&:hover
+		background: alpha(colors.button-extra-hover, 20%)
+
+	&:active
+		background: alpha(colors.button-extra-active, 20%)
+	+below(1024px)
+		display inline-block
+		background: #0f2942
+		border: 1px solid #ffffff
+		&:hover
+			background: rgba(255,255,255,0.2)
+		&:active
+			background: rgba(255,255,255,0.2)
+
+// button on carousel
+
+.button--carousel
+	display inline-block
+	padding 16px 17px 14px
+	background: colors.button-carousel-background
+	border-radius 1px
+	font-size: fontSizes.button-sm-carousel
+	color: colors.button-carousel-color
+	font-weight 700
+	text-transform uppercase
+	line-height 10px
+	margin-right 20px
+	
+	+below(6)
+		margin-right 0
+	
+	&:hover
+		background: colors.button-carousel-hover
+
+	&:active
+		background: colors.button-carousel-active
+
+
+	+above(6)
+		border-radius 3px
+		padding 18px 36px 17px
+		font-size: fontSizes.button-s-carousel
+		line-height 12px
+
+	+above(8)
+		border-radius 3px
+		padding 18px 36px 17px
+		font-size: fontSizes.button-carousel
+		line-height 13px
+
+// buttons on case-studies home's section
+
+.button--case-studies
+	display inline-block
+	font-size: fontSizes.button-walk-through-s
+	font-weight bold
+	text-transform uppercase
+	padding 0 19px
+	background alpha(#000, 0.2)
+	border 2px solid #FFFFFF
+	border-radius 5px
+	color #FFFFFF
+	//height 41px
+	line-height 36px
+
+	+above(11)
+		padding 0 40px
+		font-size: fontSizes.button-walk-through
+		//height 55px
+
+	&:hover
+		background alpha(#FFFFFF, 0.2)
+
+	&:active
+		background alpha(#000000, 0.4)
+
+// button 'see all integrations' on home page
+
+.button--integrations
+	display inline-block
+	padding 0 18px
+	color: colors.button-integrations
+	border: 2px solid colors.button-integrations-border
+	font-size xxs-font-size
+	font-weight bold
+	text-transform uppercase
+	line-height 51px
+	size auto
+
+	&:hover
+		background alpha(#FFFFFF, 0.2)
+
+	&:active
+		background alpha(#000000, 0.4)
+
+	+above(11)
+		size auto
+		font-size: fontSizes.button-integrations
+		padding 0 18px
+		line-height 51px
+
+// buttons on walk-through home's section
+
+.button--walk-through
+	display inline-block
+	border: 2px solid colors.button-walk-through-border
+	font-size: fontSizes.button-walk-through
+	font-weight bold
+	text-transform uppercase
+	line-height 53px
+
+// request a demo button on home
+
+.button--request-demo
+	padding 0 30px
+	background: colors.button-walk-through
+	color: colors.button-request-demo-color
+
+	&:hover
+		background: colors.button-walk-through-hover
+		border-color: colors.button-walk-through-hover
+
+	&:active
+		background: colors.button-walk-through-active
+		border-color: colors.button-walk-through-active
+
+// try it free button on home
+
+.button--try-free
+	padding 0 56px
+	color: colors.button-try-free-color
+
+	&:hover
+		color: colors.button-walk-through-hover
+		border-color: colors.button-walk-through-hover
+
+	&:active
+		color: colors.button-walk-through-active
+		border-color: colors.button-walk-through-active

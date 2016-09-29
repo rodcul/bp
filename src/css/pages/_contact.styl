@@ -1,0 +1,274 @@
+// Contact Pages
+		
+// Contact Enquiry component
+.contact--enquiry
+	position:relative
+	min-height:595px
+	+below(7)
+		min-height:550px
+	.contact-enquiry__section
+		background-color:bp-white
+		border-radius:5px
+		border:1px solid bp-xs-gray
+		position:absolute
+		left:50%
+		margin-left:-370px
+		top:-200px
+		width:740px
+		z-index:99
+		+below(9)
+			top:-220px
+			width:580px
+			margin-left:-290px
+		+below(7)
+			width:90%
+			position:absolute
+			margin-left:0
+			margin-right:0
+			left:5%
+			right:auto
+			margin:0
+		.title--contact
+			border-bottom:1px solid bp-xs-gray
+			color:bp-l-gray
+			font-size:24px
+			font-weight:500
+			line-height:35px
+			margin:0
+			margin-left:100px
+			margin-right:100px
+			padding-bottom:25px
+			padding-top:40px
+			position:relative
+			text-align:center
+			letter-spacing:0.03em
+			+below(6)
+				margin-left:10%
+				margin-right:10%
+				width:80%
+			&:before
+				background-color:#e95c25
+				content ""
+				display:inline-block
+				height:10px
+				left:50%
+				margin-left:-35px
+				position:absolute
+				top:-1px
+				width:70px
+		.form-field
+			padding-left:110px
+			padding-right:110px
+			padding-bottom:70px
+			float:none
+			width:100%
+			display:block
+			+below(6)
+				padding-left:10%
+				padding-right:10%
+				width:100%
+			.form-field-inner
+				margin:0 5%
+				width:90%
+				form
+					width:100%!important
+				.screen-reader-response
+					background-color:bp-white
+					margin-bottom:10px
+					color:bp-red
+					padding:10px
+					text-align:center
+					font-size:10px
+				.wpcf7-response-output
+					color:bp-red
+					font-size:10px
+					margin-top:10px
+					text-align:center
+					&.wpcf7-display-none
+						&.wpcf7-mail-sent-ng
+							color:bp-red
+							font-size:10px
+							margin-top:10px
+							text-align:center
+						&.wpcf7-validation-errors
+							color:bp-red
+							font-size:10px
+							margin-top:10px
+							text-align:center
+				.mktoForm
+					margin-top:30px
+					.mktoFormCol
+						float:none
+						.mktoFieldWrap
+							float:none
+							margin-bottom:20px
+					label
+						display:inline-block
+						font-size:xs-font-size
+						margin-bottom:5px
+						width:auto !important
+						float:none
+						color:#878787
+						font-weight:600
+						.mktoAsterix
+							float:none
+							display:none !important
+						span
+							color:bp-red
+						&:after
+							content:"*"
+							color:bp-red
+							display:inline-block
+					input
+						border 1px solid bp-xs-gray
+						box-sizing border-box
+						font-size xs-font-size
+						height auto !important
+						line-height 18px
+						padding 10px
+						width 100% !important
+					textarea
+						border:1px solid bp-xs-gray
+						font-size:xs-font-size
+						min-height:135px
+						height:140px
+						padding:10px
+						width:100%!important
+					.mktoButtonRow
+						width:100% !important
+						.mktoButtonWrap
+							margin-left:0 !important
+							button
+								background-color:bp-xs-blue
+								color:bp-white
+								font-size:xs-font-size
+								font-weigh:700
+								padding:15px 0
+								text-align:center
+								text-transform:uppercase
+								width:100%
+								margin-top:10px
+								text-shadow:none !important
+								font-weight:normal !important
+								font-family:"Open Sans",sans-serif
+								&:hover
+									background-color:#47bdfb !important
+									background-image:none
+								&:focus
+									background-color:#47bdfb !important
+									background-image:none
+						
+				.input-field
+					margin-bottom:20px
+					label
+						display:block
+						font-size:xs-font-size
+						margin-bottom:5px
+						width:100%
+						span
+							color:bp-red
+					input
+						border:1px solid bp-xs-gray
+						font-size:xs-font-size
+						padding:10px
+						width:100%
+						&.wpcf7-not-valid
+							border:1px solid bp-red
+					textarea
+						border:1px solid bp-xs-gray
+						font-size:xs-font-size
+						min-height:135px
+						height:140px
+						padding:10px
+						width:100%
+						&.wpcf7-not-valid
+							border:1px solid bp-red
+					.optional
+						font-size:13px
+						color:#aeaeae
+				.submit-field
+					input
+						background-color:bp-xs-blue
+						color:bp-white
+						font-size:xs-font-size
+						font-weigh:700
+						padding:15px 0
+						text-align:center
+						text-transform:uppercase
+						width:100%
+						margin-top:10px
+						text-shadow:none
+				.wpcf7-not-valid-tip
+					display:none
+						
+// Our Location component
+.contact--location
+	background-color:#f5f5f5
+	padding-bottom:110px
+	.contact-location__section
+		.title--contact
+			color: bp-l-gray
+			font-size: xl-font-size
+			font-weight 300
+			line-height 60px
+			margin: 85px 0 60px 0
+			text-align center
+			&:before
+				background:bp-xxs-orange none repeat scroll 0 0
+				bottom: 0
+				content:" "
+				display:block
+				height: 11px
+				left: 0
+				margin: 0 auto
+				right: 0
+				top: -20px
+				position:relative
+				width: 70px
+		.container
+			cf()
+			margin:0 auto
+			width:980px
+			+below(9)
+				width:480px
+			+below(6)
+				width:80%
+				margin:0 10%
+			.contact-block
+				float:left
+				height:100%
+				width:480px
+				text-align:center
+				+below(6)
+					width:100%
+				&.left
+					margin-right:10px
+					+below(6)
+						width:100%
+						margin-right:0
+				+below(9)
+					margin-right:0
+					margin-bottom:35px
+				.contact-map-block
+					width:100%
+					height:255px
+					+below(6)
+						height:auto
+					iframe
+						width:100%!important
+						height:100%!important
+				h4
+					cf()
+					color:bp-l-gray
+					font-size:l-font-size
+					line-height:37px
+					margin-top:12px;
+					margin-bottom:0
+				p
+					color:bp-m-gray
+					font-size:s-font-size
+					line-height:27px
+				span
+					a
+						color:bp-xs-blue
+		
