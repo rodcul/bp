@@ -210,7 +210,7 @@ document.addEventListener('DOMContentLoaded', function() {
 		var windowWidth = $(window).outerWidth();
 		var subNavigation = $('.subnav--container');
 		$('.submenu.submenu--why, .submenu.submenu--product, .submenu.submenu--resources').each(function(){
-			if($(this).css("display") == "block") { $(this).delay(500).fadeOut(300); }	
+			if($(this).css("display") == "block") { $(this).delay(500).fadeOut(300); }
 		});
 
 		elHeight		= '100'; //$element.outerHeight();
@@ -225,8 +225,7 @@ document.addEventListener('DOMContentLoaded', function() {
 				});
 			} else if( wScrollCurrent <= 0 ) { // scrolled to the very top; element sticks to the top
 				$element.css({
-					'top': '-'+elHeight,
-					opacity:0
+					'top': '-'+elHeight
 				});
 			} else {
 				$element.css({
@@ -253,7 +252,7 @@ document.addEventListener('DOMContentLoaded', function() {
 						});
 					}
 				});
-			}	
+			}
 		}
 		if( windowWidth < 1025 && !(wScrollCurrent <= 0) ) {
 			$element.css('opacity', 1);
@@ -286,6 +285,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 		$window.on( 'scroll', function()
 		{
+			console.log('bau')
 			if( !$element.hasClass('active') ){
 				elHeight		= $element.outerHeight();
 				dHeight			= $document.height();
@@ -295,12 +295,12 @@ document.addEventListener('DOMContentLoaded', function() {
 				elTop			= 25;//parseInt( $element.css( 'top' ) ) + wScrollDiff;
 
 				if( wScrollCurrent <= 0 ) { // scrolled to the very top; element sticks to the top
-					//$element.css( 'top', 25 );
+					$element.css( 'top', 25 );
 					//$element.slideUp('400');
 				} else if( wScrollDiff > 0 ) { // scrolled up; element slides in
-					//$element.css( 'top', elTop > 0 ? 68 : elTop );
+					$element.css( 'top', elTop > 0 ? 68 : elTop );
 					$element.slideDown('400');
-				} else if( wScrollDiff < 0 ) { // scrolled down
+				} else if( wScrollDiff <= 0 ) { // scrolled down
 					if( wScrollCurrent + wHeight >= dHeight - elHeight ) { // scrolled to the very bottom; element slides in
 						//$element.css( 'top', ( elTop = wScrollCurrent + wHeight - dHeight ) < 0 ? elTop : 68 );
 						$element.slideDown('400');
