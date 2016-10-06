@@ -8,6 +8,8 @@ We´ve copied out a few files that have (at least) one bug. This responsive webs
 
 To see a live version of this bug [click here](http://quirktools.com/screenfly/#u=https%3A//cdn.rawgit.com/rodcul/tech-test/master/index.html&w=320&h=500&s=1)
 
+Also might be useful to read [Navigation specification document](docs/navigation.md)
+
 ## Instructions
 
 1. Clone this repo to your development environment
